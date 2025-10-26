@@ -1,0 +1,17 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://indiecaterS.com/sitemap.xml
+
+# Disallow admin and private areas (if any in future)
+Disallow: /admin/
+Disallow: /api/
+
+# Allow all product and content pages
+Allow: /products/
+Allow: /about/
+Allow: /contact/
+Allow: /industries/
+Allow: /catalog/

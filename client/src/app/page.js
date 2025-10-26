@@ -40,7 +40,7 @@ export default function Home() {
     e.preventDefault();
     const errors = validateForm();
     setFormErrors(errors);
-    
+
     if (Object.keys(errors).length === 0) {
       setIsSubmitting(true);
       setTimeout(() => {
@@ -78,8 +78,94 @@ export default function Home() {
     );
   }
 
+  // JSON-LD structured data for SEO
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "IndieCaters Pvt Ltd",
+    "alternateName": "IndieCaters",
+    "url": "https://indiecaterS.com",
+    "logo": "https://indiecaterS.com/indie.image.png",
+    "description": "India's premier manufacturer of professional industrial indicators specializing in sterilization, moisture, and temperature monitoring solutions.",
+    "foundingDate": "2008",
+    "foundingLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "G-30,31, Ashoka Center, Pune – Satara Road",
+        "addressLocality": "Pune",
+        "postalCode": "411009",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      }
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G-30,31, Ashoka Center, Pune – Satara Road",
+      "addressLocality": "Pune",
+      "postalCode": "411009",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-98220-39087",
+      "contactType": "customer service",
+      "email": "archana@indiecaterS.com",
+      "areaServed": "IN",
+      "availableLanguage": ["English", "Hindi", "Marathi"]
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/indiecaterS",
+      "https://twitter.com/indiecaterS"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "500"
+    },
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "Industrial Indicators",
+        "category": "Healthcare & Industrial Equipment"
+      }
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "ISO 9001:2015",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "International Organization for Standardization"
+      }
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://indiecaterS.com"
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      {/* JSON-LD Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       {/* Hero Section - Enhanced Contrast */}
       <section id="home" className="hero-industrial pt-14 sm:pt-20 pb-8 relative overflow-hidden min-h-screen flex items-center">
@@ -89,13 +175,13 @@ export default function Home() {
           <div className="text-center w-full">
             <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-sm font-medium mb-6 shadow-lg backdrop-blur-sm">
               <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               ISO 9001:2015 Certified
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-2xl">
               <span className="text-white">Revolutionizing the first line of  </span><span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent px-2 drop-shadow-lg">quality control </span><span className="text-white"> with
-              <br />Made-in-India indicator technology </span>
+                <br />Made-in-India indicator technology </span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-white mb-12 max-w-4xl mx-auto drop-shadow-lg font-medium">
               Unensuring every product stays safe from factory to consumer.
@@ -104,7 +190,7 @@ export default function Home() {
               <button className="px-8 py-3 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-lg font-medium hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl backdrop-blur-sm">
                 Explore Products
               </button>
-              
+
             </div>
           </div>
         </div>
@@ -117,7 +203,7 @@ export default function Home() {
             <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
               <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
               </div>
               <div className="text-2xl md:text-4xl font-bold text-gray-800 mb-2">4.5+</div>
@@ -126,7 +212,7 @@ export default function Home() {
             <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
               <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
               <div className="text-2xl md:text-4xl font-bold text-gray-800 mb-2">1M+</div>
@@ -135,7 +221,7 @@ export default function Home() {
             <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
               <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <div className="text-2xl md:text-4xl font-bold text-gray-800 mb-2">Top 5%</div>
@@ -144,7 +230,7 @@ export default function Home() {
             <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
               <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
               </div>
               <div className="text-2xl md:text-4xl font-bold text-gray-800 mb-2">100%</div>
@@ -161,13 +247,13 @@ export default function Home() {
           <div className="text-center mb-4 md:mb-6">
             <div className="inline-flex items-center px-3 md:px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6 shadow-lg">
               <svg className="w-3 h-3 md:w-4 md:h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               Established 2008
             </div>
             <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-3 md:mb-4">About IndieCaters</h2>
             <p className="text-base md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
-            IndieCaters, founded in 2023 in Pune, is a Made-in-India startup that creates simple, printed, non-digital indicators to monitor sterilization, temperature, humidity. Designed for healthcare, pharma,food and agriculture industries, these solutions address key challenges such as improper sterilization, product spoilage, and moisture-related degradation. With a focus on simplifying quality assurance through cost-effective and reliable indicators, IndieCaters stands out for its asset-light, scalable model, zero major domestic competition, and strong potential for export and nationwide adoption.
+              IndieCaters, founded in 2023 in Pune, is a Made-in-India startup that creates simple, printed, non-digital indicators to monitor sterilization, temperature, humidity. Designed for healthcare, pharma,food and agriculture industries, these solutions address key challenges such as improper sterilization, product spoilage, and moisture-related degradation. With a focus on simplifying quality assurance through cost-effective and reliable indicators, IndieCaters stands out for its asset-light, scalable model, zero major domestic competition, and strong potential for export and nationwide adoption.
             </p>
           </div>
 
@@ -181,7 +267,7 @@ export default function Home() {
           <div className="text-center mb-4 md:mb-8">
             <div className="inline-flex items-center px-3 md:px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6 shadow-lg">
               <svg className="w-3 h-3 md:w-4 md:h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
+                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
               </svg>
               Our Advantages
             </div>
@@ -200,7 +286,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4">ISO Certified Quality</h3>
               <p className="text-sm md:text-base text-gray-600">
-              IndieCaters ensures reliability through *ISO-certified production standards*, guaranteeing precision and consistency in every indicator manufactured.
+                IndieCaters ensures reliability through *ISO-certified production standards*, guaranteeing precision and consistency in every indicator manufactured.
               </p>
             </div>
 
@@ -212,7 +298,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4">Made-in-India Innovation</h3>
               <p className="text-sm md:text-base text-gray-600">
-               All products are proudly *developed and produced in India*, supporting local manufacturing while meeting global quality benchmarks.
+                All products are proudly *developed and produced in India*, supporting local manufacturing while meeting global quality benchmarks.
               </p>
             </div>
 
@@ -224,7 +310,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4">Simple Yet Smart Solutions</h3>
               <p className="text-sm md:text-base text-gray-600">
-              Our *printed, non-digital indicators* offer easy-to-use, infrastructure-free monitoring—ideal for hospitals, pharma, and food industries.
+                Our *printed, non-digital indicators* offer easy-to-use, infrastructure-free monitoring—ideal for hospitals, pharma, and food industries.
               </p>
             </div>
 
@@ -236,7 +322,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4">Scalable & Sustainable</h3>
               <p className="text-sm md:text-base text-gray-600">
-              Designed for *seamless scalability*, our solutions can be easily adopted across industries while promoting sustainability and efficiency
+                Designed for *seamless scalability*, our solutions can be easily adopted across industries while promoting sustainability and efficiency
               </p>
             </div>
 
@@ -248,7 +334,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4">Diverse Applications</h3>
               <p className="text-sm md:text-base text-gray-600">
-              Serving *healthcare, pharmaceuticals, food, agriculture, and chemical sectors*, our indicators enhance safety, reduce wastage, and prevent losses.
+                Serving *healthcare, pharmaceuticals, food, agriculture, and chemical sectors*, our indicators enhance safety, reduce wastage, and prevent losses.
               </p>
             </div>
 
@@ -260,7 +346,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4">Early Growth, Strong Future</h3>
               <p className="text-sm md:text-base text-gray-600">
-              With an asset-light model, no major competition,IndieCaters is set to lead the quality indication revolution.
+                With an asset-light model, no major competition,IndieCaters is set to lead the quality indication revolution.
               </p>
             </div>
           </div>
@@ -277,7 +363,7 @@ export default function Home() {
               <div>
                 <div className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-pink-100 to-pink-200 text-pink-800 rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6">
                   <svg className="w-3 h-3 md:w-4 md:h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                   </svg>
                   Sterilization Solutions
                 </div>
@@ -289,37 +375,37 @@ export default function Home() {
                 <div>
                   <h4 className="text-base md:text-lg font-semibold text-gray-800 mb-2">Professional steam sterilisation monitoring:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    Our sterilisation indicators are equipped with advanced chemical sensors to detect Steam Penetration, Temperature, 
+                    Our sterilisation indicators are equipped with advanced chemical sensors to detect Steam Penetration, Temperature,
                     Time Duration, and Pressure - ensuring complete sterilisation process validation.
                   </p>
                 </div>
-                
+
                 <div>
                   <h4 className="text-base md:text-lg font-semibold text-gray-800 mb-2">Empowers you to ensure patient safety:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    Like having a quality assurance expert for your sterilisation process - providing real-time validation 
+                    Like having a quality assurance expert for your sterilisation process - providing real-time validation
                     and compliance monitoring for healthcare and pharmaceutical industries.
                   </p>
                 </div>
-                
+
                 <div>
                   <h4 className="text-base md:text-lg font-semibold text-gray-800 mb-2">A team of experts on your side:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    IndieCaters, established in 2008, is led by experienced sterilisation scientists and engineers with 
+                    IndieCaters, established in 2008, is led by experienced sterilisation scientists and engineers with
                     over 15 years of expertise in industrial monitoring solutions.
                   </p>
                 </div>
               </div>
-              
+
               <button className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg text-sm md:text-base">
                 Learn more
               </button>
             </div>
-            
+
             <div className="relative">
               {/* Yellow border frame */}
               <div className="absolute -top-4 -right-4 w-32 h-32 bg-pink-300 rounded-lg opacity-30"></div>
-              
+
               <div className="bg-white p-8 rounded-lg shadow-lg relative z-10 border-l-4 border-pink-400">
                 {/* Product representation */}
                 <div className="aspect-square bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg flex items-center justify-center mb-6 relative overflow-hidden">
@@ -333,10 +419,10 @@ export default function Home() {
                     </div>
                     <div className="text-sm font-semibold text-gray-800">Sterilisation</div>
                     <div className="text-xs text-gray-600">Indicators</div>
-                </div>
+                  </div>
                   <div className="absolute bottom-2 right-2 text-xs text-gray-500 bg-white px-2 py-1 rounded">
                     Class 5 & 6
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -352,7 +438,7 @@ export default function Home() {
             <div className="relative lg:order-1 order-2">
               {/* Yellow border frame */}
               <div className="absolute -top-4 -left-4 w-32 h-32 bg-gradient-to-r from-pink-300 to-pink-400 rounded-lg opacity-30"></div>
-              
+
               <div className="bg-white p-8 rounded-xl shadow-lg relative z-10 border-r-4 border-pink-400">
                 {/* Product representation */}
                 <div className="aspect-square bg-gradient-to-br from-cyan-50 to-blue-100 rounded-lg flex items-center justify-center mb-6 relative overflow-hidden">
@@ -373,45 +459,45 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
             <div className="space-y-8 lg:order-2 order-1">
               <div>
                 <div className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-pink-100 to-pink-200 text-pink-800 rounded-full text-sm font-medium mb-6">
                   <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                   </svg>
                   Moisture Solutions
                 </div>
                 <h2 className="text-4xl font-bold text-gray-800 mb-4">Moisture Indicators</h2>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-6">Our most reliable moisture detection solution</h3>
               </div>
-              
+
               <div className="space-y-6">
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">Comprehensive moisture monitoring:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    Our moisture indicators detect Humidity Levels, Temperature Variations, Dew Point, and Relative Humidity - 
+                    Our moisture indicators detect Humidity Levels, Temperature Variations, Dew Point, and Relative Humidity -
                     ensuring optimal storage conditions for pharmaceutical, food, and packaging industries.
                   </p>
                 </div>
-                
+
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">Empowers you to protect your products:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    Like having a quality control specialist for your storage environment - providing continuous monitoring 
+                    Like having a quality control specialist for your storage environment - providing continuous monitoring
                     and early warning alerts for moisture-sensitive products.
-            </p>
-          </div>
+                  </p>
+                </div>
 
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">A team of specialists on your side:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    IndieCaters' moisture monitoring experts bring decades of experience in environmental monitoring, 
+                    IndieCaters' moisture monitoring experts bring decades of experience in environmental monitoring,
                     helping you maintain perfect storage conditions year-round.
                   </p>
                 </div>
               </div>
-              
+
               <button className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg text-sm md:text-base">
                 Learn more
               </button>
@@ -429,55 +515,55 @@ export default function Home() {
               <div>
                 <div className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-pink-100 to-pink-200 text-pink-800 rounded-full text-sm font-medium mb-6">
                   <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                   </svg>
                   Temperature Solutions
                 </div>
                 <h2 className="text-4xl font-bold text-gray-800 mb-4">Temperature Indicators</h2>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-6">Our most precise temperature monitoring solution</h3>
               </div>
-              
+
               <div className="space-y-6">
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">Advanced temperature monitoring:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    Our temperature indicators monitor Heat Process Validation, Cold Chain Integrity, Freeze/Thaw Detection, 
+                    Our temperature indicators monitor Heat Process Validation, Cold Chain Integrity, Freeze/Thaw Detection,
                     and Thermal Exposure - ensuring critical process control and product safety.
                   </p>
                 </div>
-                
+
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">Empowers you to maintain quality standards:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    Like having a process engineer for your temperature-sensitive operations - providing real-time validation 
+                    Like having a process engineer for your temperature-sensitive operations - providing real-time validation
                     and compliance monitoring for critical processes.
                   </p>
                 </div>
-                
+
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">A team of process experts on your side:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    IndieCaters' temperature monitoring specialists combine scientific expertise with practical industry knowledge, 
+                    IndieCaters' temperature monitoring specialists combine scientific expertise with practical industry knowledge,
                     ensuring your processes meet the highest quality standards.
                   </p>
                 </div>
               </div>
-              
+
               <button className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg text-sm md:text-base">
                 Learn more
               </button>
             </div>
-            
+
             <div className="relative">
               {/* Yellow border frame */}
               <div className="absolute -top-4 -right-4 w-32 h-32 bg-pink-300 rounded-lg opacity-30"></div>
-              
+
               <div className="bg-white p-8 rounded-lg shadow-lg relative z-10 border-l-4 border-pink-400">
                 {/* Product representation */}
                 <div className="aspect-square bg-gradient-to-br from-red-50 to-pink-100 rounded-lg flex items-center justify-center mb-6 relative overflow-hidden">
                   <div className="absolute top-4 left-4 w-2 h-2 bg-red-400 rounded-full"></div>
                   <div className="absolute top-4 left-8 w-2 h-2 bg-red-400 rounded-full"></div>
-            <div className="text-center">
+                  <div className="text-center">
                     <div className="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center mb-3 mx-auto">
                       <div className="w-8 h-8 bg-gradient-to-r from-red-500 to-pink-500 rounded flex items-center justify-center">
                         <span className="text-white text-xs font-bold">IC</span>
@@ -503,7 +589,7 @@ export default function Home() {
           <div className="text-center mb-8 md:mb-16">
             <div className="inline-flex items-center px-3 md:px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6 shadow-lg">
               <svg className="w-3 h-3 md:w-4 md:h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               Trusted Partners
             </div>
@@ -517,7 +603,7 @@ export default function Home() {
             <div className="text-center bg-white p-4 md:p-6 rounded-xl shadow-sm border border-pink-100 hover:shadow-lg transition-all duration-200">
               <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
                 <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
               <div className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">500+</div>
@@ -526,7 +612,7 @@ export default function Home() {
             <div className="text-center bg-white p-4 md:p-6 rounded-xl shadow-sm border border-pink-100 hover:shadow-lg transition-all duration-200">
               <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
                 <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <div className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">25+</div>
@@ -535,7 +621,7 @@ export default function Home() {
             <div className="text-center bg-white p-4 md:p-6 rounded-xl shadow-sm border border-pink-100 hover:shadow-lg transition-all duration-200">
               <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
                 <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
               <div className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">1M+</div>
@@ -544,7 +630,7 @@ export default function Home() {
             <div className="text-center bg-white p-4 md:p-6 rounded-xl shadow-sm border border-pink-100 hover:shadow-lg transition-all duration-200">
               <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
                 <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <div className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">99.9%</div>
@@ -590,7 +676,7 @@ export default function Home() {
             <div className="lg:col-span-1 text-center lg:text-left">
               <div className="inline-flex items-center px-3 md:px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6 shadow-lg">
                 <svg className="w-3 h-3 md:w-4 md:h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd"/>
+                  <path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd" />
                 </svg>
                 Customer Stories
               </div>
@@ -602,7 +688,7 @@ export default function Home() {
                 <div className="flex items-center bg-white/50 p-3 rounded-lg">
                   <div className="w-8 h-8 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mr-3">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   </div>
                   <span className="text-sm text-gray-700 font-medium">500+ Happy Clients</span>
@@ -610,7 +696,7 @@ export default function Home() {
                 <div className="flex items-center bg-white/50 p-3 rounded-lg">
                   <div className="w-8 h-8 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mr-3">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <span className="text-sm text-gray-700 font-medium">4.8/5 Average Rating</span>
@@ -618,7 +704,7 @@ export default function Home() {
                 <div className="flex items-center bg-white/50 p-3 rounded-lg">
                   <div className="w-8 h-8 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mr-3">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <span className="text-sm text-gray-700 font-medium">98% Satisfaction Rate</span>
@@ -644,12 +730,12 @@ export default function Home() {
                     <div className="flex mb-4">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "IndieCaters' sterilisation indicators have been instrumental in maintaining our hospital's quality standards. 
+                      "IndieCaters' sterilisation indicators have been instrumental in maintaining our hospital's quality standards.
                       The accuracy and reliability are exceptional, and their customer support is outstanding."
                     </blockquote>
                   </div>
@@ -669,12 +755,12 @@ export default function Home() {
                     <div className="flex mb-4">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "The moisture indicators from IndieCaters have revolutionized our quality control process. Their precision 
+                      "The moisture indicators from IndieCaters have revolutionized our quality control process. Their precision
                       and consistency help us maintain optimal storage conditions for our pharmaceutical products."
                     </blockquote>
                   </div>
@@ -694,12 +780,12 @@ export default function Home() {
                     <div className="flex mb-4">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "IndieCaters' temperature indicators provide the accuracy and reliability we need for our critical processes. 
+                      "IndieCaters' temperature indicators provide the accuracy and reliability we need for our critical processes.
                       Their products meet all international standards, and their customer service is prompt and professional."
                     </blockquote>
                   </div>
@@ -719,12 +805,12 @@ export default function Home() {
                     <div className="flex mb-4">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "We've been partnering with IndieCaters for over 5 years, and they consistently deliver exceptional quality. 
+                      "We've been partnering with IndieCaters for over 5 years, and they consistently deliver exceptional quality.
                       Their monitoring solutions help us maintain compliance with international pharmaceutical standards."
                     </blockquote>
                   </div>
@@ -745,12 +831,12 @@ export default function Home() {
                     <div className="flex mb-4">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "IndieCaters' sterilisation indicators have been instrumental in maintaining our hospital's quality standards. 
+                      "IndieCaters' sterilisation indicators have been instrumental in maintaining our hospital's quality standards.
                       The accuracy and reliability are exceptional, and their customer support is outstanding."
                     </blockquote>
                   </div>
@@ -770,12 +856,12 @@ export default function Home() {
                     <div className="flex mb-4">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "The moisture indicators from IndieCaters have revolutionized our quality control process. Their precision 
+                      "The moisture indicators from IndieCaters have revolutionized our quality control process. Their precision
                       and consistency help us maintain optimal storage conditions for our pharmaceutical products."
                     </blockquote>
                   </div>
@@ -795,12 +881,12 @@ export default function Home() {
                     <div className="flex mb-4">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "IndieCaters' temperature indicators provide the accuracy and reliability we need for our critical processes. 
+                      "IndieCaters' temperature indicators provide the accuracy and reliability we need for our critical processes.
                       Their products meet all international standards, and their customer service is prompt and professional."
                     </blockquote>
                   </div>
@@ -820,12 +906,12 @@ export default function Home() {
                     <div className="flex mb-4">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "We've been partnering with IndieCaters for over 5 years, and they consistently deliver exceptional quality. 
+                      "We've been partnering with IndieCaters for over 5 years, and they consistently deliver exceptional quality.
                       Their monitoring solutions help us maintain compliance with international pharmaceutical standards."
                     </blockquote>
                   </div>
@@ -835,7 +921,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
 
       {/* Contact Form Modal */}
       {showContactForm && (
