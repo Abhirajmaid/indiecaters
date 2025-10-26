@@ -1,17 +1,13 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for IndieCaters.com
+
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://indiecaterS.com/sitemap.xml
+# Sitemap location
+Sitemap: https://www.indiecaterS.com/sitemap.xml
 
-# Disallow admin and private areas (if any in future)
-Disallow: /admin/
+# Block crawling of private/admin areas if any exist
 Disallow: /api/
 
-# Allow all product and content pages
-Allow: /products/
-Allow: /about/
-Allow: /contact/
-Allow: /industries/
-Allow: /catalog/
+# Allow crawling of all public content
+Allow: /

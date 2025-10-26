@@ -1,33 +1,34 @@
 export default function sitemap() {
-    const baseUrl = 'https://indiecaterS.com';
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.indiecaterS.com';
 
+    // Static pages
     const routes = [
         '',
         '/about',
+        '/careers',
+        '/case-studies',
         '/catalog',
         '/contact',
         '/industries',
-        '/careers',
-        '/case-studies',
+        '/industries/healthcare',
         '/investors',
         '/leadership',
         '/news',
         '/partners',
+        '/products',
+        '/products/temperature',
+        '/products/moisture',
+        '/products/humidity',
+        '/products/sterilization',
         '/quality',
         '/support',
         '/training',
-        '/products/sterilization',
-        '/products/humidity',
-        '/products/moisture',
-        '/products/temperature',
-    ];
-
-    const sitemapEntries = routes.map((route) => ({
+    ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
-        changeFrequency: route === '' ? 'daily' : 'weekly',
-        priority: route === '' ? 1.0 : 0.8,
+        changeFrequency: route === '' ? 'weekly' : 'monthly',
+        priority: route === '' ? 1 : 0.8,
     }));
 
-    return sitemapEntries;
+    return routes;
 }

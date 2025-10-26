@@ -1,12 +1,14 @@
 export default function robots() {
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.indiecaterS.com';
+
     return {
         rules: [
             {
                 userAgent: '*',
                 allow: '/',
-                disallow: ['/admin/', '/api/'],
+                disallow: ['/api/', '/private/'],
             },
         ],
-        sitemap: 'https://indiecaterS.com/sitemap.xml',
+        sitemap: `${baseUrl}/sitemap.xml`,
     };
 }

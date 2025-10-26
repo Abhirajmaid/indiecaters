@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import StructuredData from "./components/StructuredData";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -14,30 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-	metadataBase: new URL('https://indiecaterS.com'),
-	title: {
-		default: "IndieCaters - Leading Industrial Indicators Manufacturer | Sterilization, Moisture & Temperature Solutions",
-		template: "%s | IndieCaters",
-	},
+	metadataBase: new URL('https://www.indiecaterS.com'),
+	title:
+		"IndieCaters - Leading Industrial Indicators Manufacturer | Sterilization, Moisture & Temperature Solutions",
 	description:
 		"IndieCaters Pvt Ltd - India's premier manufacturer of professional industrial indicators. Specializing in sterilization, moisture, and temperature monitoring solutions with 15+ years of expertise. ISO certified quality, woman-led innovation.",
-	keywords: [
-		"industrial indicators",
-		"sterilization indicators",
-		"moisture indicators",
-		"temperature indicators",
-		"steam indicators",
-		"ETO indicators",
-		"chemical indicators",
-		"India manufacturer",
-		"quality assurance",
-		"healthcare indicators",
-		"pharmaceutical indicators",
-		"autoclave indicators",
-		"humidity cards",
-		"ISO 9001 certified",
-		"Made in India"
-	],
+	keywords:
+		"industrial indicators, sterilization indicators, moisture indicators, temperature indicators, steam indicators, ETO indicators, chemical indicators, India manufacturer, quality assurance, ISO certified",
 	authors: [{ name: "IndieCaters Pvt Ltd" }],
 	creator: "IndieCaters Pvt Ltd",
 	publisher: "IndieCaters Pvt Ltd",
@@ -52,19 +36,17 @@ export const metadata = {
 			'max-snippet': -1,
 		},
 	},
+	alternates: {
+		canonical: '/',
+	},
 	openGraph: {
 		title: "IndieCaters - Leading Industrial Indicators Manufacturer",
 		description:
 			"Professional industrial indicators for sterilization, moisture, and temperature monitoring. 15+ years of expertise, ISO certified, woman-led innovation.",
-		url: "https://indiecaterS.com",
+		url: "https://www.indiecaterS.com",
 		siteName: "IndieCaters",
 		images: [
-			{
-				url: "/indie.image.png",
-				width: 1200,
-				height: 630,
-				alt: "IndieCaters Industrial Indicators - ISO Certified Manufacturer",
-			},
+			{ url: "/indie.image.png", width: 1200, height: 630, alt: "IndieCaters Industrial Indicators" },
 		],
 		locale: "en_US",
 		type: "website",
@@ -73,34 +55,23 @@ export const metadata = {
 		card: "summary_large_image",
 		title: "IndieCaters - Leading Industrial Indicators Manufacturer",
 		description:
-			"Professional industrial indicators for sterilization, moisture, and temperature monitoring.",
+			"Professional industrial indicators for sterilization, moisture, and temperature monitoring. ISO certified, woman-led innovation.",
 		images: ["/indie.image.png"],
-		creator: "@indiecaterS",
 	},
-	alternates: {
-		canonical: "https://indiecaterS.com",
-	},
-	category: 'Industrial Manufacturing',
 };
 
 export const viewport = {
 	width: "device-width",
 	initialScale: 1,
 	maximumScale: 5,
-	themeColor: "#EC4899",
-	themeColorScheme: "light",
+	themeColor: "#FCD34D",
 };
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" itemScope itemType="https://schema.org/Organization">
+		<html lang="en">
 			<head>
-				<link rel="icon" href="/favicon.ico" />
-				<link rel="canonical" href="https://indiecaterS.com" />
-				<meta name="geo.region" content="IN-MH" />
-				<meta name="geo.placename" content="Pune" />
-				<meta name="geo.position" content="18.5204;73.8567" />
-				<meta name="ICBM" content="18.5204, 73.8567" />
+				<StructuredData />
 			</head>
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 				<Navigation />
