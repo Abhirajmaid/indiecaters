@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-	metadataBase: new URL('https://www.indiecaterS.com'),
+	metadataBase: new URL('https://www.indiecaters.com'),
 	title:
 		"IndieCaters - Leading Industrial Indicators Manufacturer | Sterilization, Moisture & Temperature Solutions",
 	description:
@@ -43,7 +43,7 @@ export const metadata = {
 		title: "IndieCaters - Leading Industrial Indicators Manufacturer",
 		description:
 			"Professional industrial indicators for sterilization, moisture, and temperature monitoring. 15+ years of expertise, ISO certified, woman-led innovation.",
-		url: "https://www.indiecaterS.com",
+		url: "https://www.indiecaters.com",
 		siteName: "IndieCaters",
 		images: [
 			{ url: "/indie.image.png", width: 1200, height: 630, alt: "IndieCaters Industrial Indicators" },

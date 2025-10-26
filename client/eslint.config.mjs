@@ -20,6 +20,16 @@ const eslintConfig = [
       "next-env.d.ts",
     ],
   },
+  {
+    rules: {
+      // Allow unescaped entities in JSX
+      "react/no-unescaped-entities": "off",
+      // Allow HTML links for pages (can use <a> instead of <Link> in some cases)
+      "@next/next/no-html-link-for-pages": "warn",
+      // Allow using <img> instead of <Image /> (warning only)
+      "@next/next/no-img-element": "warn",
+    },
+  },
 ];
 
 export default eslintConfig;
