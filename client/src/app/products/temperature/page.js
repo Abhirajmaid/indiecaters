@@ -176,12 +176,11 @@ export default function TemperatureIndicatorsPage() {
           </div>
 
           {/* Products Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
             {filteredProducts.map((product) => (
-              <Link
+              <div
                 key={product.id}
-                href={`/products/${product.slug}`}
-                className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer block"
+                className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group"
               >
                 {/* Product Image */}
                 <div className="relative h-64 bg-gradient-to-br from-gray-50 to-gray-100 p-6 flex items-center justify-center">
@@ -191,63 +190,102 @@ export default function TemperatureIndicatorsPage() {
                     className="max-h-full max-w-full object-contain rounded-lg"
                   />
                   {product.popular && (
-                    <div className="absolute top-4 right-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div className="absolute top-4 right-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-3 py-1 rounded-full text-sm font-bold">
                       ★ Popular
                     </div>
                   )}
-                  <div className={`absolute bottom-4 right-4 w-3 h-3 rounded-full ${product.inStock ? 'bg-green-400' : 'bg-red-400'}`}></div>
+                  <div className={`absolute bottom-4 right-4 w-4 h-4 rounded-full ${product.inStock ? 'bg-pink-400' : 'bg-pink-300'}`}></div>
                 </div>
 
                 {/* Product Info */}
-                <div className="p-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <div className="flex-1">
-                      <h3 className="text-lg font-bold text-gray-800 mb-1 group-hover:text-pink-600 transition-colors">
-                        {product.name}
-                      </h3>
-                      <p className="text-sm text-gray-500 font-medium">{product.type}</p>
-                    </div>
+                <div className="p-8">
+                  <div className="mb-4">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-pink-600 transition-colors">
+                      {product.name}
+                    </h3>
+                    <p className="text-lg text-gray-500 font-medium">{product.type}</p>
                   </div>
 
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-3 leading-relaxed">
+                  {/* Product Description */}
+                  <p className="text-gray-600 text-base mb-6 leading-relaxed">
                     {product.description}
                   </p>
 
                   {/* Key Features */}
-                  <div className="space-y-2 mb-4">
-                    {product.features.slice(0, 2).map((feature, index) => (
-                      <div key={index} className="flex items-center text-xs text-gray-600">
-                        <svg className="w-3 h-3 text-pink-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                        </svg>
-                        {feature}
-                      </div>
-                    ))}
+                  <div className="mb-6">
+                    <h4 className="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                      <svg className="w-5 h-5 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      Key Features
+                    </h4>
+                    <div className="grid grid-cols-1 gap-2">
+                      {product.features.map((feature, index) => (
+                        <div key={index} className="flex items-center text-sm text-gray-600">
+                          <svg className="w-3 h-3 text-pink-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
+                          </svg>
+                          {feature}
+                        </div>
+                      ))}
+                    </div>
                   </div>
 
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-1 mb-4">
-                    {product.tags.map((tag) => (
-                      <span key={tag} className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-md">
-                        {tag}
-                      </span>
-                    ))}
+                  {/* Applications */}
+                  <div className="mb-6">
+                    <h4 className="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                      <svg className="w-5 h-5 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" clipRule="evenodd"/>
+                      </svg>
+                      Applications
+                    </h4>
+                    <div className="grid grid-cols-1 gap-2">
+                      {product.applications.map((application, index) => (
+                        <div key={index} className="flex items-center text-sm text-gray-600">
+                          <svg className="w-3 h-3 text-pink-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
+                          </svg>
+                          {application}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Specifications */}
+                  <div className="mb-6">
+                    <h4 className="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                      <svg className="w-5 h-5 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      Specifications
+                    </h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      {Object.entries(product.specifications).map(([key, value], index) => (
+                        <div key={index} className="bg-gray-50 p-3 rounded-lg">
+                          <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide">{key}</div>
+                          <div className="text-sm text-gray-800 font-medium">{value}</div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
 
                   {/* Bottom Section */}
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                     <div className="flex items-center">
-                      <span className="text-sm font-semibold text-gray-800">{product.price}</span>
+                      <span className="text-lg font-semibold text-gray-800">{product.price}</span>
                     </div>
-                    <button className="text-pink-600 hover:text-pink-700 text-sm font-medium flex items-center group">
-                      View Details
-                      <svg className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <button 
+                      onClick={() => window.location.href = '/contact'}
+                      className="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg flex items-center"
+                    >
+                      Contact Us
+                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                       </svg>
                     </button>
                   </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
 

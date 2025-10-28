@@ -79,92 +79,40 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
-
-      {/* Hero Section - Enhanced Contrast */}
-      <section id="home" className="hero-industrial pt-14 sm:pt-20 pb-8 relative overflow-hidden min-h-screen flex items-center">
+    <div className="min-h-screen overflow-x-hidden">
+      {/* Hero Section - Full Screen Coverage Including Header */}
+      <section id="home" className="hero-industrial relative w-full h-[90vh]">
         {/* Enhanced overlay for better text contrast */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/60"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <div className="text-center w-full">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-sm font-medium mb-6 shadow-lg backdrop-blur-sm">
-              <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-              </svg>
-              ISO 9001:2015 Certified
-            </div>
+        
+        {/* Content Overlay */}
+        <div className="relative z-10 h-[90vh] flex items-center justify-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div className="text-center w-full">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-2xl">
-              <span className="text-white">Revolutionizing the first line of  </span><span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent px-2 drop-shadow-lg">quality control </span><span className="text-white"> with
+              <span className="text-white">Revolutionizing the first line of </span><span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent px-2 drop-shadow-lg">quality control </span><span className="text-white"> with
               <br />Made-in-India indicator technology </span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-white mb-12 max-w-4xl mx-auto drop-shadow-lg font-medium">
-              Unensuring every product stays safe from factory to consumer.
+            <p className="text-xl sm:text-2xl md:text-3xl text-white mb-12 max-w-4xl mx-auto drop-shadow-lg font-medium">
+              Ensuring every product stays safe from factory to consumer.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-lg font-medium hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl backdrop-blur-sm">
+            <div className="flex justify-center">
+              <button 
+                onClick={() => window.location.href = '/products'}
+                className="px-10 py-4 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl backdrop-blur-sm transform hover:scale-105 text-xl"
+              >
                 Explore Products
               </button>
-              
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Statistical Highlights - Mobile First */}
-      <section className="bg-gradient-to-r from-gray-50 to-blue-50 py-6 md:py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-              </div>
-              <div className="text-2xl md:text-4xl font-bold text-gray-800 mb-2">4.5+</div>
-              <div className="text-xs md:text-sm text-gray-600">Average rating on flagship products</div>
-            </div>
-            <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
-                </svg>
-              </div>
-              <div className="text-2xl md:text-4xl font-bold text-gray-800 mb-2">1M+</div>
-              <div className="text-xs md:text-sm text-gray-600">Industrial indicators delivered worldwide</div>
-            </div>
-            <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-              </div>
-              <div className="text-2xl md:text-4xl font-bold text-gray-800 mb-2">Top 5%</div>
-              <div className="text-xs md:text-sm text-gray-600">In industry sustainability, ISO certified</div>
-            </div>
-            <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                </svg>
-              </div>
-              <div className="text-2xl md:text-4xl font-bold text-gray-800 mb-2">100%</div>
-              <div className="text-xs md:text-sm text-gray-600">Quality assurance on all shipments</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="bg-gradient-to-br from-white to-blue-50 pt-12 md:pt-16 pb-4 md:pb-12 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-400/5 to-pink-500/5"></div>
+      <section id="about" className="bg-white pt-12 md:pt-16 pb-4 md:pb-12 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-4 md:mb-6">
-            <div className="inline-flex items-center px-3 md:px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6 shadow-lg">
-              <svg className="w-3 h-3 md:w-4 md:h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-              </svg>
-              Established 2008
-            </div>
             <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-3 md:mb-4">About IndieCaters</h2>
             <p className="text-base md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
             IndieCaters, founded in 2023 in Pune, is a Made-in-India startup that creates simple, printed, non-digital indicators to monitor sterilization, temperature, humidity. Designed for healthcare, pharma,food and agriculture industries, these solutions address key challenges such as improper sterilization, product spoilage, and moisture-related degradation. With a focus on simplifying quality assurance through cost-effective and reliable indicators, IndieCaters stands out for its asset-light, scalable model, zero major domestic competition, and strong potential for export and nationwide adoption.
@@ -178,14 +126,8 @@ export default function Home() {
       <section className="bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 pt-6 md:pt-12 pb-12 md:pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-pink-400/5 to-pink-500/5"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center mb-4 md:mb-8">
-            <div className="inline-flex items-center px-3 md:px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6 shadow-lg">
-              <svg className="w-3 h-3 md:w-4 md:h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
-              </svg>
-              Our Advantages
-            </div>
-            <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-3 md:mb-4">Why IndieCaters?</h2>
+           <div className="text-center mb-4 md:mb-8">
+             <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-3 md:mb-4">Why IndieCaters?</h2>
             <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
               Discover what sets us apart in the industrial monitoring industry
             </p>

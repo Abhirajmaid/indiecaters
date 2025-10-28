@@ -8,23 +8,22 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-pink-50 via-white to-pink-100 py-12 sm:py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-400/5 to-pink-500/5"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center">
-            <div className="inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6 shadow-lg">
-              <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-              </svg>
-              Since 2008
+      <section className="hero-industrial relative w-full h-[90vh]">
+        {/* Enhanced overlay for better text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/60"></div>
+        
+        {/* Content Overlay */}
+        <div className="relative z-10 h-[90vh] flex items-center justify-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div className="text-center">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-2xl">
+                <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">About</span> <span className="text-white drop-shadow-lg">IndieCaters</span>
+              </h1>
+              <p className="text-xl sm:text-2xl text-white max-w-4xl mx-auto leading-relaxed mb-8 drop-shadow-lg">
+              IndieCaters is a Made-in-India startup, founded in Pune in 2023, that simplifies quality assurance with simple, non-digital printed indicators.
+              We offer cost-effective and reliable solutions for monitoring sterilization, temperature, and humidity across the healthcare, pharma, food, and agriculture sectors. IndieCaters directly tackles critical challenges like improper sterilization, product spoilage, and moisture damage. Our asset-light model, scalability, and lack of major domestic competition position us for rapid nationwide adoption and strong export growth.
+              </p>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 leading-tight">
-              About <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent px-2">IndieCaters</span>
-            </h1>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            IndieCaters is a Made-in-India startup, founded in Pune in 2023, that simplifies quality assurance with simple, non-digital printed indicators.
-            We offer cost-effective and reliable solutions for monitoring sterilization, temperature, and humidity across the healthcare, pharma, food, and agriculture sectors. IndieCaters directly tackles critical challenges like improper sterilization, product spoilage, and moisture damage. Our asset-light model, scalability, and lack of major domestic competition position us for rapid nationwide adoption and strong export growth.
-            </p>
           </div>
         </div>
       </section>

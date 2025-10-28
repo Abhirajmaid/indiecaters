@@ -1,8 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import IndustryModal from "../components/IndustryModal";
-
 export default function IndustriesPage() {
   const industries = [
     {
@@ -106,29 +103,26 @@ export default function IndustriesPage() {
     }
   ];
 
-  const [openIndustry, setOpenIndustry] = useState(null);
-
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-pink-50 via-white to-pink-100 py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-400/5 to-pink-500/5"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-sm font-medium mb-6 shadow-lg">
-              <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-              </svg>
-              Industry Solutions
+      <section className="hero-industrial relative w-full h-[90vh]">
+        {/* Enhanced overlay for better text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/60"></div>
+        
+        {/* Content Overlay */}
+        <div className="relative z-10 h-[90vh] flex items-center justify-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div className="text-center">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
+                <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">Industries We</span> <span className="text-white drop-shadow-lg">Serve</span>
+              </h1>
+              <p className="text-xl sm:text-2xl text-white max-w-4xl mx-auto leading-relaxed mb-8 drop-shadow-lg">
+                Professional industrial indicators for diverse industry applications. 
+                We provide specialized monitoring solutions tailored to meet the unique 
+                requirements of each sector we serve.
+              </p>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
-              Industries We <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent px-2">Serve</span>
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Professional industrial indicators for diverse industry applications. 
-              We provide specialized monitoring solutions tailored to meet the unique 
-              requirements of each sector we serve.
-            </p>
           </div>
         </div>
       </section>
@@ -152,49 +146,86 @@ export default function IndustriesPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {industries.map((industry) => (
-              <div key={industry.id} className="bg-white rounded-xl shadow-sm border border-pink-100 overflow-hidden hover:shadow-lg transition-all duration-200">
-                <div className="aspect-[16/9] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
+              <div key={industry.id} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-all duration-200 flex flex-col">
+                {/* Header Section */}
+                <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
                   <img 
                     src={industry.image} 
                     alt={industry.name} 
                     className="w-full h-full object-cover"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/20 to-black/30"></div>
                   <div className="absolute top-4 left-4">
-                    <div className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-pink-100 to-pink-200 text-pink-800 rounded-full text-sm font-medium">
-                      <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
-                      </svg>
+                    <div className="inline-flex items-center px-3 py-1 bg-white/90 text-gray-800 rounded-full text-sm font-medium">
                       {industry.name}
                     </div>
                   </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-xl font-bold text-white mb-1">{industry.name}</h3>
+                    <p className="text-white/90 text-sm">{industry.description}</p>
+                  </div>
                 </div>
                 
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-3">{industry.name}</h3>
-                  <p className="text-gray-600 mb-6">{industry.description}</p>
-                  
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-gray-800 mb-3">Key Applications</h4>
-                    <ul className="space-y-2">
-                      {industry.applications.slice(0, 3).map((app, index) => (
-                        <li key={index} className="text-sm text-gray-600 flex items-center">
-                            <div className="w-2 h-2 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full mr-2"></div>
-                          {app}
-                        </li>
-                      ))}
-                    </ul>
+                {/* Content Section - Extended heights without scrollbars */}
+                <div className="p-6 grid grid-rows-[200px_280px_450px_220px] gap-8">
+                  {/* Detailed Description - Row 1 */}
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800 mb-4">Overview</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">{industry.detailedDescription}</p>
                   </div>
 
-                  <div className="mt-6">
-                    <button
-                      onClick={() => setOpenIndustry(industry)}
-                      className="inline-flex items-center bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl"
-                    >
-                      Learn More About {industry.name}
-                      <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </button>
+                  {/* Key Points Section - Row 2 */}
+                  {industry.keyPoints && (
+                    <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+                      <h4 className="text-base font-semibold text-gray-800 mb-4">Key Points</h4>
+                      <div className="space-y-3">
+                        {industry.keyPoints.map((point, index) => (
+                          <div key={index} className="bg-white p-3 rounded border border-gray-100">
+                            <p className="text-gray-700 text-sm">{point}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Applications and Benefits Grid - Row 3 */}
+                  <div>
+                    <div className="grid grid-cols-1 gap-8 h-full">
+                      <div>
+                        <h4 className="text-base font-semibold text-gray-800 mb-4">Applications</h4>
+                        <ul className="space-y-3 text-gray-600">
+                          {industry.applications.map((item, idx) => (
+                            <li key={idx} className="flex items-start text-sm">
+                              <span className="mt-1 mr-3 w-1.5 h-1.5 bg-pink-500 rounded-full flex-shrink-0"></span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="text-base font-semibold text-gray-800 mb-4">Benefits</h4>
+                        <ul className="space-y-3 text-gray-600">
+                          {industry.benefits.map((item, idx) => (
+                            <li key={idx} className="flex items-start text-sm">
+                              <span className="mt-1 mr-3 w-1.5 h-1.5 bg-pink-500 rounded-full flex-shrink-0"></span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Key Products - Row 4 */}
+                  <div className="bg-gray-50 rounded-lg p-5">
+                    <h4 className="text-base font-semibold text-gray-800 mb-4">Key Products</h4>
+                    <div className="flex flex-wrap gap-3">
+                      {industry.products.map((p, idx) => (
+                        <span key={idx} className="px-3 py-1 rounded-full bg-white text-gray-700 text-xs border border-gray-200">
+                          {p}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -202,12 +233,6 @@ export default function IndustriesPage() {
           </div>
         </div>
       </section>
-
-      <IndustryModal
-        industry={openIndustry}
-        isOpen={!!openIndustry}
-        onClose={() => setOpenIndustry(null)}
-      />
 
       {/* Statistical Highlights */}
       <section className="bg-gradient-to-r from-gray-50 to-blue-50 pt-8 pb-16">

@@ -66,12 +66,25 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 90vh;
+  height: 90vh;
+  width: 100%;
 }
 
 /* Disable parallax on mobile to prevent jank */
 @media (max-width: 768px) {
   .hero-industrial {
     background-attachment: scroll;
+    min-height: 100vh;
+    height: 100vh;
+  }
+}
+
+/* Ensure hero section covers full viewport */
+@media (max-width: 640px) {
+  .hero-industrial {
+    min-height: 100vh;
+    height: 100vh;
   }
 }
 
