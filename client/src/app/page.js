@@ -253,7 +253,10 @@ export default function Home() {
                 </div>
               </div>
               
-              <button className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg text-sm md:text-base">
+              <button 
+                onClick={() => window.location.href = '/products/sterilization'}
+                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg text-sm md:text-base"
+              >
                 Learn more
               </button>
             </div>
@@ -354,7 +357,10 @@ export default function Home() {
                 </div>
               </div>
               
-              <button className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg text-sm md:text-base">
+              <button 
+                onClick={() => window.location.href = '/products/moisture'}
+                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg text-sm md:text-base"
+              >
                 Learn more
               </button>
             </div>
@@ -405,7 +411,10 @@ export default function Home() {
                 </div>
               </div>
               
-              <button className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg text-sm md:text-base">
+              <button 
+                onClick={() => window.location.href = '/products/temperature'}
+                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg text-sm md:text-base"
+              >
                 Learn more
               </button>
             </div>
