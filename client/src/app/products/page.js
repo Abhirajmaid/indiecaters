@@ -407,10 +407,11 @@ export default function ProductsPage() {
             {filteredCategories.map((category) => (
               <div key={category.id} className="bg-white rounded-3xl shadow-lg border border-gray-200 overflow-hidden">
                 {/* Category Header */}
-                <div className={`bg-gradient-to-r ${category.bgColor} ${category.borderColor} border-b p-8`}>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-4">
-                      <div className="w-16 h-16 rounded-2xl overflow-hidden bg-white shadow-md">
+                <div className={`bg-gradient-to-r ${category.bgColor} ${category.borderColor} border-b p-6 sm:p-8`}> 
+                  <div className="grid grid-cols-3 items-center gap-2 sm:gap-4">
+                    {/* Image, 1/3 */}
+                    <div className="flex justify-center">
+                      <div className="w-16 h-16 rounded-2xl overflow-hidden bg-white shadow-md flex items-center justify-center">
                         <Image
                           src={category.image}
                           alt={category.name}
@@ -419,14 +420,27 @@ export default function ProductsPage() {
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <div>
-                        <h2 className="text-3xl font-bold text-gray-800 mb-2">{category.name}</h2>
-                        <p className={`text-lg ${category.textColor} font-medium`}>{category.description}</p>
+                    </div>
+                    {/* Details, 2/3 */}
+                    <div className="col-span-2 flex flex-col justify-center">
+                      <h2 className="text-3xl font-bold text-gray-800 mb-1">{category.name}</h2>
+                      <p className={`text-lg ${category.textColor} font-medium mb-2`}>{category.description}</p>
+                      <div 
+                        className={`inline-flex items-center px-4 py-1 rounded-full text-sm font-semibold ${
+                          selectedCategory === category.id
+                            ? 'bg-gradient-to-r from-pink-500 to-pink-600 text-white'
+                            : 'bg-pink-100 text-pink-700'
+                        }`}
+                      >
+                        {category.products.length} Products Available
                       </div>
                     </div>
+                  </div>
+                  {/* Button row - always centered for all screens */}
+                  <div className="flex justify-center mt-4">
                     <Link
                       href={`/products/${category.id}`}
-                      className={`bg-gradient-to-r ${category.color} text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105`}
+                      className={`bg-gradient-to-r ${category.color} text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 w-full sm:w-auto text-center`}
                     >
                       View All Products
                     </Link>
@@ -464,22 +478,24 @@ export default function ProductsPage() {
                 {/* Featured Products */}
                 <div className="p-8">
                   <h3 className="text-xl font-semibold text-gray-800 mb-6">Featured Products</h3>
-                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {category.products.map((product) => (
                       <Link
                         key={product.id}
                         href={`/products/${category.id}`}
-                        className={`bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer block ${category.hoverColor}`}
+                        className={
+                          "max-w-[160px] w-full mx-auto mb-4 p-2 rounded-2xl bg-white shadow cursor-pointer hover:shadow-lg transition-all duration-200 flex flex-col items-center justify-start " + category.hoverColor
+                        }
                       >
                         {/* Product Image */}
-                        <div className="relative h-40 bg-gradient-to-br from-gray-50 to-gray-100 p-4 flex items-center justify-center">
+                        <div className="w-full flex items-center justify-center">
                           {product.image.startsWith("/") ? (
                             <Image
                               src={product.image}
                               alt={product.name}
-                              width={150}
-                              height={150}
-                              className="max-h-full max-w-full object-contain rounded-lg"
+                              width={110}
+                              height={110}
+                              className="w-full max-w-[110px] h-auto object-contain mx-auto block p-2"
                             />
                           ) : (
                             <div className="w-12 h-12 bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center text-xl">
@@ -487,38 +503,16 @@ export default function ProductsPage() {
                             </div>
                           )}
                           {product.popular && (
-                            <div className={`absolute top-2 right-2 bg-gradient-to-r ${category.color} text-white px-2 py-1 rounded-full text-xs font-bold`}>
+                            <div className={"absolute top-2 right-2 bg-gradient-to-r " + category.color + " text-white px-2 py-1 rounded-full text-xs font-bold"}>
                               ★ Popular
                             </div>
                           )}
-                          <div className={`absolute bottom-2 right-2 w-3 h-3 rounded-full ${product.inStock ? 'bg-pink-400' : 'bg-pink-300'}`}></div>
                         </div>
-
                         {/* Product Info */}
-                        <div className="p-4">
-                          <div className="mb-2">
-                            <h4 className="text-lg font-bold text-gray-800 mb-1 group-hover:text-pink-600 transition-colors">
-                              {product.name}
-                            </h4>
-                            <p className="text-sm text-gray-500 font-medium">{product.type}</p>
-                          </div>
-
-                          <p className="text-gray-600 text-sm mb-3 line-clamp-2 leading-relaxed">
-                            {product.description.split('.')[0]}.
-                          </p>
-
-                          {/* Bottom Section */}
-                          <div className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <span className="text-sm font-semibold text-gray-800">{product.price}</span>
-                            </div>
-                            <div className="text-pink-600 hover:text-pink-700 text-sm font-medium flex items-center group">
-                              View Details
-                              <svg className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                              </svg>
-                            </div>
-                          </div>
+                        <div className="pt-2 pb-1 px-2 text-center w-full flex flex-col items-center justify-center">
+                          <h4 className="text-sm sm:text-base font-bold text-gray-800 text-center group-hover:text-pink-600 transition-colors truncate w-full">
+                            {product.name}
+                          </h4>
                         </div>
                       </Link>
                     ))}

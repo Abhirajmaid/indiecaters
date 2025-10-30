@@ -90,7 +90,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div className="text-center w-full">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-2xl">
-              <span className="text-white">Revolutionizing the first line of </span><span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent px-2 drop-shadow-lg">quality control </span><span className="text-white"> with
+              <span className="text-white">Revolutionizing the first line of </span><span style={{ color: '#eab9c1' }} className="bg-clip-text text-transparent px-2 drop-shadow-lg">quality control </span><span className="text-white"> with
               <br />Made-in-India indicator technology </span>
             </h1>
             <p className="text-xl sm:text-2xl md:text-3xl text-white mb-12 max-w-4xl mx-auto drop-shadow-lg font-medium">
@@ -99,7 +99,7 @@ export default function Home() {
             <div className="flex justify-center">
               <button 
                 onClick={() => window.location.href = '/products'}
-                className="px-10 py-4 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl backdrop-blur-sm transform hover:scale-105 text-xl"
+                className="px-10 py-4 bg-[#eab9c1] text-white rounded-lg font-semibold hover:bg-[#ce7c8a] transition-all duration-300 shadow-lg hover:shadow-xl backdrop-blur-sm transform hover:scale-105 text-xl"
               >
                 Explore Products
               </button>
@@ -255,7 +255,7 @@ export default function Home() {
               
               <button 
                 onClick={() => window.location.href = '/products/sterilization'}
-                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg text-sm md:text-base"
+                className="bg-[#eab9c1] text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:bg-[#ce7c8a] transition-all duration-200 shadow-lg text-sm md:text-base"
               >
                 Learn more
               </button>
@@ -263,9 +263,9 @@ export default function Home() {
             
             <div className="relative">
               {/* Yellow border frame */}
-              <div className="absolute -top-4 -right-4 w-32 h-32 bg-pink-300 rounded-lg opacity-30"></div>
+              <div className="absolute -top-4 -right-4 w-32 h-32 bg-[#eab9c1] rounded-lg opacity-30"></div>
               
-              <div className="bg-white p-8 rounded-lg shadow-lg relative z-10 border-l-4 border-pink-400">
+              <div className="bg-white p-8 rounded-lg shadow-lg relative z-10 border-l-4 border-[#eab9c1]">
                 {/* Product representation */}
                 <div className="aspect-square bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg flex items-center justify-center mb-6 relative overflow-hidden">
                   <div className="absolute top-4 left-4 w-2 h-2 bg-green-400 rounded-full"></div>
@@ -298,7 +298,7 @@ export default function Home() {
               {/* Yellow border frame */}
               <div className="absolute -top-4 -left-4 w-32 h-32 bg-gradient-to-r from-pink-300 to-pink-400 rounded-lg opacity-30"></div>
               
-              <div className="bg-white p-8 rounded-xl shadow-lg relative z-10 border-r-4 border-pink-400">
+              <div className="bg-white p-8 rounded-xl shadow-lg relative z-10 border-r-4 border-[#eab9c1]">
                 {/* Product representation */}
                 <div className="aspect-square bg-gradient-to-br from-cyan-50 to-blue-100 rounded-lg flex items-center justify-center mb-6 relative overflow-hidden">
                   <div className="absolute top-4 right-4 w-2 h-2 bg-blue-400 rounded-full"></div>
@@ -359,7 +359,7 @@ export default function Home() {
               
               <button 
                 onClick={() => window.location.href = '/products/moisture'}
-                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg text-sm md:text-base"
+                className="bg-[#eab9c1] text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:bg-[#ce7c8a] transition-all duration-200 shadow-lg text-sm md:text-base"
               >
                 Learn more
               </button>
@@ -413,7 +413,7 @@ export default function Home() {
               
               <button 
                 onClick={() => window.location.href = '/products/temperature'}
-                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg text-sm md:text-base"
+                className="bg-[#eab9c1] text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:bg-[#ce7c8a] transition-all duration-200 shadow-lg text-sm md:text-base"
               >
                 Learn more
               </button>
@@ -421,9 +421,9 @@ export default function Home() {
             
             <div className="relative">
               {/* Yellow border frame */}
-              <div className="absolute -top-4 -right-4 w-32 h-32 bg-pink-300 rounded-lg opacity-30"></div>
+              <div className="absolute -top-4 -right-4 w-32 h-32 bg-[#eab9c1] rounded-lg opacity-30"></div>
               
-              <div className="bg-white p-8 rounded-lg shadow-lg relative z-10 border-l-4 border-pink-400">
+              <div className="bg-white p-8 rounded-lg shadow-lg relative z-10 border-l-4 border-[#eab9c1]">
                 {/* Product representation */}
                 <div className="aspect-square bg-gradient-to-br from-red-50 to-pink-100 rounded-lg flex items-center justify-center mb-6 relative overflow-hidden">
                   <div className="absolute top-4 left-4 w-2 h-2 bg-red-400 rounded-full"></div>
@@ -856,7 +856,7 @@ export default function Home() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-pink-400 to-pink-500 text-white py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg disabled:opacity-50"
+                className="w-full bg-[#eab9c1] text-white py-3 rounded-lg font-semibold hover:bg-[#ce7c8a] transition-all duration-200 shadow-lg disabled:opacity-50"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>

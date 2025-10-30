@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import CalendlyWidget from "../components/CalendlyWidget";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -30,22 +31,6 @@ export default function ContactPage() {
       next.message = "Message is required";
     }
     return next;
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const next = validate();
-    setErrors(next);
-    if (Object.keys(next).length) {
-      return;
-    }
-    setSubmitting(true);
-    // Simulate submission
-    setTimeout(() => {
-      setSubmitting(false);
-      setSubmitted(true);
-      setFormData({ name: "", email: "", message: "" });
-    }, 1200);
   };
 
   return (
@@ -227,7 +212,13 @@ export default function ContactPage() {
                     </div>
                   </div>
                 )}
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form action="https://formsubmit.co/archana@indiecaters.com" method="POST" className="space-y-6" onSubmit={(e) => {
+  const next = validate();
+  setErrors(next);
+  if (Object.keys(next).length) {
+    e.preventDefault();
+  }
+}}>
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Name</label>
                     <input 
@@ -383,6 +374,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <CalendlyWidget />
     </div>
   );
 }
