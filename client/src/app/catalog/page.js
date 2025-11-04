@@ -75,7 +75,7 @@ export default function CatalogPage() {
         "Pharmaceutical Equipment"
       ],
       price: "Contact for pricing",
-      image: "/images/sterl/STEAM  INDICATOR(TYPE 5).jpg",
+      image: "/newimg/Sterilization Indicators.jpg",
       inStock: true,
       popular: true
     },
@@ -111,7 +111,7 @@ export default function CatalogPage() {
         "Healthcare Equipment"
       ],
       price: "Contact for pricing",
-      image: "/images/sterl/STEAM  INDIACTOR(TYPE 6).jpg",
+      image: "/newimg/Sterilization Indicators.jpg",
       inStock: true,
       popular: false
     },
@@ -147,7 +147,7 @@ export default function CatalogPage() {
         "Compliance Testing"
       ],
       price: "Contact for pricing",
-      image: "/images/sterl/BOWIE DICK HELIX TEST STRIPES(TYPE 2).png",
+      image: "/newimg/Sterilization Indicators.jpg",
       inStock: true,
       popular: true
     },
@@ -170,7 +170,7 @@ export default function CatalogPage() {
         "Standards": "ISO 11140"
       },
       price: "Contact for pricing",
-      image: "/images/humidity_indicators/humidity_card_1.jpg",
+      image: "/newimg/Humidity Indicators.jpg",
       inStock: true,
       popular: false
     },
@@ -193,7 +193,7 @@ export default function CatalogPage() {
         "Standards": "ISO 11140"
       },
       price: "Contact for pricing",
-      image: "/images/sterl/Self Adhesive Autoclave Tape for Steam Sterilization.jpg",
+      image: "/newimg/Autoclave Sterilization Tape.jpg",
       inStock: true,
       popular: true
     },
@@ -216,7 +216,7 @@ export default function CatalogPage() {
         "Standards": "MIL-D-3464"
       },
       price: "Contact for pricing",
-      image: "/images/sterl/Self Adhesive, for Steam & ETO  Sterilization.jpg",
+      image: "/newimg/Sterilization Indicators.jpg",
       inStock: true,
       popular: false
     },
@@ -239,7 +239,7 @@ export default function CatalogPage() {
         "Standards": "ISO 11140"
       },
       price: "Contact for pricing",
-      image: "/images/sterl/Self Adhesive, for Steam & ETO  Sterilization.jpg",
+      image: "/newimg/Sterilization Indicators.jpg",
       inStock: true,
       popular: false
     },
@@ -262,7 +262,7 @@ export default function CatalogPage() {
         "Standards": "ISO 11140"
       },
       price: "Contact for pricing",
-      image: "/images/sterl/HELIX PCD TEST STRIPES(TYPE 2).png",
+      image: "/newimg/Sterilization Indicators.jpg",
       inStock: true,
       popular: false
     }

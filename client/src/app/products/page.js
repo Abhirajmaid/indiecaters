@@ -11,7 +11,7 @@ export default function ProductsPage() {
     {
       id: "sterilization",
       name: "Sterilization Indicators",
-      image: "/images/sterl/STEAM  INDICATOR(TYPE 5).jpg",
+      image: "/newimg/Sterilization Indicators.jpg",
       description: "Professional steam sterilization indicators for healthcare and pharmaceutical industries",
       color: "from-pink-500 to-pink-600",
       bgColor: "from-pink-50 to-pink-100",
@@ -104,7 +104,7 @@ export default function ProductsPage() {
     {
       id: "humidity",
       name: "Humidity Indicators",
-      image: "/images/sterl/BOWIE DICK HELIX TEST STRIPES(TYPE 2).png",
+      image: "/newimg/Humidity Indicators.jpg",
       description: "Reliable moisture detection for pharmaceutical, food, and packaging industries",
       color: "from-pink-500 to-pink-600",
       bgColor: "from-pink-50 to-pink-100",
@@ -197,7 +197,7 @@ export default function ProductsPage() {
     {
       id: "temperature",
       name: "Temperature Indicators",
-      image: "/images/sterl/HELIX PCD TEST STRIPES(TYPE 2).png",
+      image: "/newimg/Autoclave_Machine.jpg",
       description: "Precise temperature monitoring solutions for critical processes and cold chain management",
       color: "from-pink-500 to-pink-600",
       bgColor: "from-pink-50 to-pink-100",
@@ -213,7 +213,7 @@ export default function ProductsPage() {
           name: "Temperature Indicator Strips",
           type: "Heat Process Monitor",
           description: "Self-adhesive temperature indicators for heat process monitoring and validation. Essential for ensuring proper temperature exposure during sterilization and heat treatment processes in healthcare and manufacturing industries.",
-          image: "/images/sterl/Self Adhesive Autoclave Tape for Steam Sterilization.jpg",
+          image: "/newimg/Autoclave Sterilization Tape.jpg",
           popular: true,
           inStock: true,
           price: "Contact for pricing",

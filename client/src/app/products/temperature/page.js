@@ -33,7 +33,7 @@ export default function TemperatureIndicatorsPage() {
         "Quality Control"
       ],
       price: "Contact for pricing",
-      image: "/images/sterl/Self Adhesive Autoclave Tape for Steam Sterilization.jpg",
+      image: "/newimg/Autoclave Sterilization Tape.jpg",
       inStock: true,
       popular: true,
       tags: ["strips", "heat", "process"]

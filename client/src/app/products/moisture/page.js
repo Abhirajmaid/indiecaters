@@ -33,7 +33,7 @@ export default function MoisturePage() {
         "Industrial Applications"
       ],
       price: "Contact for pricing",
-      image: "/images/sterl/Self Adhesive, for Steam & ETO  Sterilization.jpg",
+      image: "/newimg/Humidity Indicators1.jpg",
       inStock: true,
       popular: false,
       tags: ["packets", "desiccant", "moisture"]
