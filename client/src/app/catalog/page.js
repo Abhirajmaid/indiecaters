@@ -75,7 +75,7 @@ export default function CatalogPage() {
         "Pharmaceutical Equipment"
       ],
       price: "Contact for pricing",
-      image: "/newimg/Sterilization Indicators.jpg",
+      image: "/newimg/Sterilization%20Indicators.jpg",
       inStock: true,
       popular: true
     },
@@ -111,7 +111,7 @@ export default function CatalogPage() {
         "Healthcare Equipment"
       ],
       price: "Contact for pricing",
-      image: "/newimg/Sterilization Indicators.jpg",
+      image: "/newimg/Sterilization%20Indicators.jpg",
       inStock: true,
       popular: false
     },
@@ -147,7 +147,7 @@ export default function CatalogPage() {
         "Compliance Testing"
       ],
       price: "Contact for pricing",
-      image: "/newimg/Sterilization Indicators.jpg",
+      image: "/newimg/Sterilization%20Indicators.jpg",
       inStock: true,
       popular: true
     },
@@ -170,7 +170,7 @@ export default function CatalogPage() {
         "Standards": "ISO 11140"
       },
       price: "Contact for pricing",
-      image: "/newimg/Humidity Indicators.jpg",
+      image: "/newimg/Humidity%20Indicators.jpg",
       inStock: true,
       popular: false
     },
@@ -193,7 +193,7 @@ export default function CatalogPage() {
         "Standards": "ISO 11140"
       },
       price: "Contact for pricing",
-      image: "/newimg/Autoclave Sterilization Tape.jpg",
+      image: "/newimg/Autoclave%20Sterilization%20Tape.jpg",
       inStock: true,
       popular: true
     },
@@ -216,7 +216,7 @@ export default function CatalogPage() {
         "Standards": "MIL-D-3464"
       },
       price: "Contact for pricing",
-      image: "/newimg/Sterilization Indicators.jpg",
+      image: "/newimg/Sterilization%20Indicators.jpg",
       inStock: true,
       popular: false
     },
@@ -239,7 +239,7 @@ export default function CatalogPage() {
         "Standards": "ISO 11140"
       },
       price: "Contact for pricing",
-      image: "/newimg/Sterilization Indicators.jpg",
+      image: "/newimg/Sterilization%20Indicators.jpg",
       inStock: true,
       popular: false
     },
@@ -262,7 +262,7 @@ export default function CatalogPage() {
         "Standards": "ISO 11140"
       },
       price: "Contact for pricing",
-      image: "/newimg/Sterilization Indicators.jpg",
+      image: "/newimg/Sterilization%20Indicators.jpg",
       inStock: true,
       popular: false
     }

@@ -33,7 +33,7 @@ export default function HumidityPage() {
         "Document Preservation"
       ],
       price: "Contact for pricing",
-      image: "/newimg/Humidity Indicators.jpg",
+      image: "/newimg/Humidity%20Indicators.jpg",
       inStock: true,
       popular: false,
       tags: ["RH cards", "visual", "storage"]
@@ -63,7 +63,7 @@ export default function HumidityPage() {
         "Quality Control"
       ],
       price: "Contact for pricing",
-      image: "/newimg/Humidity Indicators.jpg",
+      image: "/newimg/Humidity%20Indicators.jpg",
       inStock: true,
       popular: true,
       tags: ["electronic", "digital", "advanced"]
@@ -93,7 +93,7 @@ export default function HumidityPage() {
         "Shipping Protection"
       ],
       price: "Contact for pricing",
-      image: "/newimg/Humidity Indicators.jpg",
+      image: "/newimg/Humidity%20Indicators.jpg",
       inStock: true,
       popular: false,
       tags: ["strips", "self-adhesive", "monitoring"]
@@ -123,7 +123,7 @@ export default function HumidityPage() {
         "Moisture Sensitive Goods"
       ],
       price: "Contact for pricing",
-      image: "/newimg/Humidity Indicators.jpg",
+      image: "/newimg/Humidity%20Indicators.jpg",
       inStock: true,
       popular: true,
       tags: ["desiccant", "canisters", "moisture"]

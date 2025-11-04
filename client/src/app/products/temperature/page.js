@@ -33,7 +33,7 @@ export default function TemperatureIndicatorsPage() {
         "Quality Control"
       ],
       price: "Contact for pricing",
-      image: "/newimg/Autoclave Sterilization Tape.jpg",
+      image: "/newimg/Autoclave%20Sterilization%20Tape.jpg",
       inStock: true,
       popular: true,
       tags: ["strips", "heat", "process"]

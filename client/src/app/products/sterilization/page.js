@@ -33,7 +33,7 @@ export default function SterilizationPage() {
         "Surgical Tools"
       ],
       price: "Contact for pricing",
-      image: "/newimg/Sterilization Indicators.jpg",
+      image: "/newimg/Sterilization%20Indicators.jpg",
       inStock: true,
       popular: true,
       tags: ["class 5", "steam", "advanced"]
@@ -64,7 +64,7 @@ export default function SterilizationPage() {
         "Research Facilities"
       ],
       price: "Contact for pricing",
-      image: "/newimg/Sterilization Indicators.jpg",
+      image: "/newimg/Sterilization%20Indicators.jpg",
       inStock: true,
       popular: false,
       tags: ["class 6", "steam", "process"]
@@ -94,7 +94,7 @@ export default function SterilizationPage() {
         "Medical Device Facilities"
       ],
       price: "Contact for pricing",
-      image: "/newimg/Sterilization Indicators.jpg",
+      image: "/newimg/Sterilization%20Indicators.jpg",
       inStock: true,
       popular: true,
       tags: ["bowie dick", "air removal", "steam"]
@@ -124,7 +124,7 @@ export default function SterilizationPage() {
         "Laboratory Equipment"
       ],
       price: "Contact for pricing",
-      image: "/newimg/Sterilization Indicators.jpg",
+      image: "/newimg/Sterilization%20Indicators.jpg",
       inStock: true,
       popular: false,
       tags: ["ETO", "tape", "self-adhesive"]

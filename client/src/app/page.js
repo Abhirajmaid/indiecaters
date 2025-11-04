@@ -271,12 +271,13 @@ export default function Home() {
                   <div className="absolute top-4 left-4 w-2 h-2 bg-green-400 rounded-full"></div>
                   <div className="absolute top-4 left-8 w-2 h-2 bg-green-400 rounded-full"></div>
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center mb-3 mx-auto">
-                      <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded flex items-center justify-center">
-                        <span className="text-white text-xs font-bold">IC</span>
-                      </div>
-                    </div>
-                    <div className="text-sm font-semibold text-gray-800">Sterilisation</div>
+                    <Image
+                      src="/newimg/Sterilization%20Indicators.jpg"
+                      alt="Sterilisation Indicators"
+                      fill
+                      className="object-cover rounded-lg mx-auto"
+                    />
+                    <div className="text-sm font-semibold text-gray-800 mt-2">Sterilisation</div>
                     <div className="text-xs text-gray-600">Indicators</div>
                 </div>
                   <div className="absolute bottom-2 right-2 text-xs text-gray-500 bg-white px-2 py-1 rounded">
@@ -304,12 +305,13 @@ export default function Home() {
                   <div className="absolute top-4 right-4 w-2 h-2 bg-blue-400 rounded-full"></div>
                   <div className="absolute top-4 right-8 w-2 h-2 bg-blue-400 rounded-full"></div>
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center mb-3 mx-auto">
-                      <div className="w-8 h-8 bg-gradient-to-r from-cyan-500 to-blue-600 rounded flex items-center justify-center">
-                        <span className="text-white text-xs font-bold">IC</span>
-                      </div>
-                    </div>
-                    <div className="text-sm font-semibold text-gray-800">Moisture</div>
+                    <Image
+                      src="/newimg/Humidity%20Indicators.jpg"
+                      alt="Moisture Indicators"
+                      fill
+                      className="object-cover rounded-lg mx-auto"
+                    />
+                    <div className="text-sm font-semibold text-gray-800 mt-2">Moisture</div>
                     <div className="text-xs text-gray-600">Indicators</div>
                   </div>
                   <div className="absolute bottom-2 left-2 text-xs text-gray-500 bg-white px-2 py-1 rounded">
@@ -429,12 +431,13 @@ export default function Home() {
                   <div className="absolute top-4 left-4 w-2 h-2 bg-red-400 rounded-full"></div>
                   <div className="absolute top-4 left-8 w-2 h-2 bg-red-400 rounded-full"></div>
             <div className="text-center">
-                    <div className="w-16 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center mb-3 mx-auto">
-                      <div className="w-8 h-8 bg-gradient-to-r from-red-500 to-pink-500 rounded flex items-center justify-center">
-                        <span className="text-white text-xs font-bold">IC</span>
-                      </div>
-                    </div>
-                    <div className="text-sm font-semibold text-gray-800">Temperature</div>
+                    <Image
+                      src="/newimg/Autoclave_Machine.jpg"
+                      alt="Temperature Indicators"
+                      fill
+                      className="object-cover rounded-lg mx-auto"
+                    />
+                    <div className="text-sm font-semibold text-gray-800 mt-2">Temperature</div>
                     <div className="text-xs text-gray-600">Indicators</div>
                   </div>
                   <div className="absolute bottom-2 right-2 text-xs text-gray-500 bg-white px-2 py-1 rounded">

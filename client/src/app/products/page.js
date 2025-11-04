@@ -11,7 +11,7 @@ export default function ProductsPage() {
     {
       id: "sterilization",
       name: "Sterilization Indicators",
-      image: "/newimg/Sterilization Indicators.jpg",
+      image: "/newimg/Sterilization%20Indicators.jpg",
       description: "Professional steam sterilization indicators for healthcare and pharmaceutical industries",
       color: "from-pink-500 to-pink-600",
       bgColor: "from-pink-50 to-pink-100",
@@ -104,7 +104,7 @@ export default function ProductsPage() {
     {
       id: "humidity",
       name: "Humidity Indicators",
-      image: "/newimg/Humidity Indicators.jpg",
+      image: "/newimg/Humidity%20Indicators.jpg",
       description: "Reliable moisture detection for pharmaceutical, food, and packaging industries",
       color: "from-pink-500 to-pink-600",
       bgColor: "from-pink-50 to-pink-100",
@@ -213,7 +213,7 @@ export default function ProductsPage() {
           name: "Temperature Indicator Strips",
           type: "Heat Process Monitor",
           description: "Self-adhesive temperature indicators for heat process monitoring and validation. Essential for ensuring proper temperature exposure during sterilization and heat treatment processes in healthcare and manufacturing industries.",
-          image: "/newimg/Autoclave Sterilization Tape.jpg",
+          image: "/newimg/Autoclave%20Sterilization%20Tape.jpg",
           popular: true,
           inStock: true,
           price: "Contact for pricing",
