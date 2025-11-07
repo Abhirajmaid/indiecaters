@@ -242,29 +242,6 @@ export default function CatalogPage() {
       image: "/newimg/Sterilization%20Indicators.jpg",
       inStock: true,
       popular: false
-    },
-    {
-      id: 8,
-      name: "Cold Chain Monitor",
-      category: "temperature",
-      type: "Freeze/Thaw Indicator",
-      description: "Temperature indicators for cold chain monitoring and freeze/thaw detection.",
-      features: [
-        "Freeze/thaw detection",
-        "Irreversible indication",
-        "Multiple temperature points",
-        "Cold chain validation"
-      ],
-      specifications: {
-        "Temperature Range": "-20°C to +25°C",
-        "Accuracy": "±1°C",
-        "Shelf Life": "2 years",
-        "Standards": "ISO 11140"
-      },
-      price: "Contact for pricing",
-      image: "/newimg/Sterilization%20Indicators.jpg",
-      inStock: true,
-      popular: false
     }
   ];
 
@@ -280,7 +257,7 @@ export default function CatalogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
-              Product <span className="bg-pink-400 px-2">Catalog</span>
+              Product <span className="bg-[#ce7c8a] px-2">Catalog</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive range of professional industrial indicators for sterilization, 
@@ -341,7 +318,7 @@ export default function CatalogPage() {
               {/* Category Stats */}
               <div className="mt-8 space-y-4">
                 <div className="flex items-center">
-                  <div className="w-8 h-8 bg-pink-400 rounded-full flex items-center justify-center mr-3">
+                  <div className="w-8 h-8 bg-[#ce7c8a] rounded-full flex items-center justify-center mr-3">
                     <svg className="w-4 h-4 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                     </svg>
@@ -349,7 +326,7 @@ export default function CatalogPage() {
                   <span className="text-sm text-gray-600">50+ Products Available</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-8 h-8 bg-pink-400 rounded-full flex items-center justify-center mr-3">
+                  <div className="w-8 h-8 bg-[#ce7c8a] rounded-full flex items-center justify-center mr-3">
                     <svg className="w-4 h-4 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                     </svg>
@@ -357,7 +334,7 @@ export default function CatalogPage() {
                   <span className="text-sm text-gray-600">ISO Certified Quality</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-8 h-8 bg-pink-400 rounded-full flex items-center justify-center mr-3">
+                  <div className="w-8 h-8 bg-[#ce7c8a] rounded-full flex items-center justify-center mr-3">
                     <svg className="w-4 h-4 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
                     </svg>
@@ -408,7 +385,7 @@ export default function CatalogPage() {
                                   {product.inStock ? 'In Stock' : 'Out of Stock'}
                                 </span>
                               </div>
-                              <button className="text-pink-400 hover:text-pink-500 text-sm font-medium">
+                              <button className="text-[#ce7c8a] hover:text-[#b85c6d] text-sm font-medium">
                                 View Details →
                               </button>
                             </div>

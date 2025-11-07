@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
 	return (
 		<footer className="bg-gradient-to-br from-gray-800 to-gray-900 text-white py-8 relative overflow-hidden">
-			<div className="absolute inset-0 bg-gradient-to-r from-pink-400/5 to-pink-500/5"></div>
+			<div className="absolute inset-0 bg-gradient-to-r from-[#ce7c8a]/5 to-[#ce7c8a]/5"></div>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
 				<div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
 					{/* Company Info */}
@@ -13,14 +13,14 @@ export default function Footer() {
 							<Image src="/indie.image.png" alt="IndieCaters Logo" width={48} height={48} className="w-10 h-10 object-contain mr-3" />
 							<div>
 								<span className="text-lg font-bold text-white">IndieCaters</span>
-								<p className="text-xs font-medium" style={{ color: '#eab9c1' }}>Since 2008</p>
+								<p className="text-xs font-medium" style={{ color: '#ce7c8a' }}>Since 2008</p>
 							</div>
 						</div>
 						<p className="text-gray-300 text-sm leading-relaxed mb-4 max-w-md">
 							India's leading manufacturer of professional industrial indicators. Specializing in sterilization, moisture, and temperature monitoring solutions for healthcare, pharmaceutical, and manufacturing industries.
 						</p>
 						<div className="flex items-center text-sm text-gray-300">
-							<svg className="w-4 h-4 mr-2" fill="currentColor" style={{ color: '#eab9c1' }} viewBox="0 0 20 20">
+							<svg className="w-4 h-4 mr-2" fill="currentColor" style={{ color: '#ce7c8a' }} viewBox="0 0 20 20">
 								<path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
 							</svg>
 							<span>Pune, Maharashtra, India</span>
@@ -29,23 +29,23 @@ export default function Footer() {
 
 					{/* Products */}
 					<div>
-						<h3 className="text-sm font-semibold mb-3" style={{ color: '#eab9c1' }}>Products</h3>
+						<h3 className="text-sm font-semibold mb-3" style={{ color: '#ce7c8a' }}>Products</h3>
 						<ul className="space-y-2 text-sm text-gray-300">
-							<li><Link href="/products/sterilization" style={{ transition: 'color 0.2s' }} className="hover:!text-[#eab9c1]">Sterilization Indicators</Link></li>
-							<li><Link href="/products/humidity" className="hover:text-pink-400 transition-colors">Humidity Indicators</Link></li>
-							<li><Link href="/products/temperature" className="hover:text-pink-400 transition-colors">Temperature Indicators</Link></li>
-							<li><Link href="/products/moisture" className="hover:text-pink-400 transition-colors">Moisture Indicators</Link></li>
+							<li><Link href="/products/sterilization" style={{ transition: 'color 0.2s' }} className="hover:!text-[#ce7c8a]">Sterilization Indicators</Link></li>
+							<li><Link href="/products/humidity" className="hover:text-[#ce7c8a] transition-colors">Humidity Indicators</Link></li>
+							<li><Link href="/products/temperature" className="hover:text-[#ce7c8a] transition-colors">Temperature Indicators</Link></li>
+							<li><Link href="/products/moisture" className="hover:text-[#ce7c8a] transition-colors">Moisture Indicators</Link></li>
 						</ul>
 					</div>
 
 					{/* Company */}
 					<div>
-						<h3 className="text-sm font-semibold mb-3" style={{ color: '#eab9c1' }}>Company</h3>
+						<h3 className="text-sm font-semibold mb-3" style={{ color: '#ce7c8a' }}>Company</h3>
 						<ul className="space-y-2 text-sm text-gray-300">
-							<li><Link href="/about" className="hover:text-pink-400 transition-colors">About Us</Link></li>
-							<li><Link href="/industries" className="hover:text-pink-400 transition-colors">Industries</Link></li>
-							<li><Link href="/quality" className="hover:text-pink-400 transition-colors">Quality</Link></li>
-							<li><Link href="/contact" className="hover:text-pink-400 transition-colors">Contact</Link></li>
+							<li><Link href="/about" className="hover:text-[#ce7c8a] transition-colors">About Us</Link></li>
+							<li><Link href="/industries" className="hover:text-[#ce7c8a] transition-colors">Industries</Link></li>
+							<li><Link href="/quality" className="hover:text-[#ce7c8a] transition-colors">Quality</Link></li>
+							<li><Link href="/contact" className="hover:text-[#ce7c8a] transition-colors">Contact</Link></li>
 						</ul>
 					</div>
 				</div>

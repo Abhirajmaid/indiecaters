@@ -3,18 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: #374151;
-  --accent: #f8b5c1;
-  --accent-dark: #e85a7a;
-  --accent-light: #fce7ed;
+  --accent: #ce7c8a;
+  --accent-dark: #b85c6d;
+  --accent-light: #f0d4d9;
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
   --gray-800: #374151;
   --gray-600: #6b7280;
-  --peach: #f4a6a6;
-  --peach-light: #f9d5d5;
+  --peach: #ce7c8a;
+  --peach-light: #e8c4cb;
   --dark-gray: #374151;
-  --light-pink: #f8b5c1;
-  --eab9c1: #eab9c1;
+  --light-pink: #ce7c8a;
+  --eab9c1: #ce7c8a;
 }
 
 @theme inline {
@@ -24,11 +24,11 @@
   --font-mono: var(--font-geist-mono);
   
   /* IndieCaters Logo Colors */
-  --color-brand-pink: #f8b5c1;
-  --color-brand-pink-dark: #e85a7a;
-  --color-brand-pink-light: #fce7ed;
-  --color-brand-peach: #f4a6a6;
-  --color-brand-peach-light: #f9d5d5;
+  --color-brand-pink: #ce7c8a;
+  --color-brand-pink-dark: #b85c6d;
+  --color-brand-pink-light: #f0d4d9;
+  --color-brand-peach: #ce7c8a;
+  --color-brand-peach-light: #e8c4cb;
   --color-brand-gray: #374151;
   --color-brand-gray-light: #6b7280;
 }
@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:hover {
   background-color: var(--accent-dark);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(248, 181, 193, 0.4);
+  box-shadow: 0 4px 12px rgba(206, 124, 138, 0.4);
 }
 
 /* Card styles */

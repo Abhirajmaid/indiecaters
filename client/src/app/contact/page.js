@@ -45,7 +45,7 @@ export default function ContactPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div className="text-center">
               <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">Get in</span> <span className="text-white drop-shadow-lg">Touch</span>
+                <span className="bg-gradient-to-r from-[#ce7c8a] to-[#b85c6d] bg-clip-text text-transparent drop-shadow-lg">Get in</span> <span className="text-white drop-shadow-lg">Touch</span>
               </h1>
               <p className="text-xl sm:text-2xl text-white max-w-4xl mx-auto leading-relaxed mb-8 drop-shadow-lg">
                 Questions about our sterilisation, moisture, or temperature indicators? We're here to help with expert guidance and support.
@@ -59,8 +59,8 @@ export default function ContactPage() {
       <section className="bg-gradient-to-r from-gray-50 to-blue-50 pt-6 sm:pt-8 pb-12 sm:pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-            <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center bg-gradient-to-br from-[#f0d4d9] to-[#e8c4cb] p-6 rounded-xl border border-[#e8c4cb] hover:shadow-lg transition-all duration-200">
+              <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                 </svg>
@@ -68,8 +68,8 @@ export default function ContactPage() {
               <div className="text-4xl font-bold text-gray-800 mb-2">24/7</div>
               <div className="text-gray-600">Expert Support</div>
             </div>
-            <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center bg-gradient-to-br from-[#f0d4d9] to-[#e8c4cb] p-6 rounded-xl border border-[#e8c4cb] hover:shadow-lg transition-all duration-200">
+              <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
@@ -77,8 +77,8 @@ export default function ContactPage() {
               <div className="text-4xl font-bold text-gray-800 mb-2">2-5</div>
               <div className="text-gray-600">Days Response Time</div>
             </div>
-            <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center bg-gradient-to-br from-[#f0d4d9] to-[#e8c4cb] p-6 rounded-xl border border-[#e8c4cb] hover:shadow-lg transition-all duration-200">
+              <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
@@ -86,8 +86,8 @@ export default function ContactPage() {
               <div className="text-4xl font-bold text-gray-800 mb-2">98%</div>
               <div className="text-gray-600">Customer Satisfaction</div>
             </div>
-            <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center bg-gradient-to-br from-[#f0d4d9] to-[#e8c4cb] p-6 rounded-xl border border-[#e8c4cb] hover:shadow-lg transition-all duration-200">
+              <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                 </svg>
@@ -101,10 +101,10 @@ export default function ContactPage() {
 
       {/* Contact Content */}
       <section className="py-12 sm:py-20 bg-gradient-to-br from-white to-blue-50 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-400/5 to-pink-500/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#ce7c8a]/5 to-[#ce7c8a]/5"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-10 sm:mb-16">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-sm font-medium mb-6 shadow-lg">
+            <div className="inline-flex items-center px-4 py-2 bg-[#ce7c8a] text-white rounded-full text-sm font-medium mb-6 shadow-lg">
               <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
               </svg>
@@ -119,10 +119,10 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-5 gap-6 md:gap-8">
             {/* Contact Details */}
             <aside className="md:col-span-2">
-              <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-6 md:p-8 space-y-6 md:space-y-8 border border-pink-100 shadow-sm">
+              <div className="bg-gradient-to-br from-[#f0d4d9] to-[#e8c4cb] rounded-xl p-6 md:p-8 space-y-6 md:space-y-8 border border-[#e8c4cb] shadow-sm">
                 <div>
                   <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-gradient-to-r from-pink-500 to-pink-600 rounded-lg flex items-center justify-center mr-4">
+                    <div className="w-10 h-10 bg-[#ce7c8a] rounded-lg flex items-center justify-center mr-4">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                       </svg>
@@ -136,35 +136,35 @@ export default function ContactPage() {
                 
                 <div>
                   <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-gradient-to-r from-pink-500 to-pink-600 rounded-lg flex items-center justify-center mr-4">
+                    <div className="w-10 h-10 bg-[#ce7c8a] rounded-lg flex items-center justify-center mr-4">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                       </svg>
                     </div>
                     <div>
                       <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Call</div>
-                      <a href="tel:+919822039087" className="text-gray-800 font-medium text-lg hover:text-pink-600 transition-colors">+91 9822039087</a>
+                      <a href="tel:+919822039087" className="text-gray-800 font-medium text-lg hover:text-[#ce7c8a] transition-colors">+91 9822039087</a>
                     </div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-gradient-to-r from-pink-500 to-pink-600 rounded-lg flex items-center justify-center mr-4">
+                    <div className="w-10 h-10 bg-[#ce7c8a] rounded-lg flex items-center justify-center mr-4">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                       </svg>
                     </div>
                     <div>
                       <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Email</div>
-                      <a href="mailto:archana@indiecaters.com" className="text-gray-800 font-medium text-lg hover:text-pink-600 transition-colors">archana@indiecaters.com</a>
+                      <a href="mailto:archana@indiecaters.com" className="text-gray-800 font-medium text-lg hover:text-[#ce7c8a] transition-colors">archana@indiecaters.com</a>
                     </div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex items-start mb-4">
-                    <div className="w-10 h-10 bg-gradient-to-r from-pink-400 to-pink-500 rounded-lg flex items-center justify-center mr-4 mt-1">
+                    <div className="w-10 h-10 bg-[#ce7c8a] rounded-lg flex items-center justify-center mr-4 mt-1">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -182,9 +182,9 @@ export default function ContactPage() {
                   </div>
                 </div>
                 
-                <div className="pt-6 border-t border-pink-200">
+                <div className="pt-6 border-t border-[#e8c4cb]">
                   <div className="flex items-center">
-                    <div className="w-10 h-10 bg-gradient-to-r from-pink-500 to-pink-600 rounded-lg flex items-center justify-center mr-4">
+                    <div className="w-10 h-10 bg-[#ce7c8a] rounded-lg flex items-center justify-center mr-4">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                       </svg>
@@ -200,7 +200,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="md:col-span-3">
-              <div className="bg-white border border-pink-100 rounded-xl shadow-sm p-6 md:p-8">
+              <div className="bg-white border border-[#e8c4cb] rounded-xl shadow-sm p-6 md:p-8">
                 <h2 className="text-2xl font-bold text-gray-800 mb-6">Send us a message</h2>
                 {submitted && (
                   <div className="mb-6 rounded-lg bg-gradient-to-r from-green-50 to-emerald-50 p-4 text-green-800 border border-green-200">
@@ -226,7 +226,7 @@ export default function ContactPage() {
                       name="name" 
                       value={formData.name} 
                       onChange={handleChange} 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-all duration-200" 
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ce7c8a] focus:border-transparent transition-all duration-200" 
                       placeholder="Your name" 
                     />
                     {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
@@ -239,7 +239,7 @@ export default function ContactPage() {
                       type="email" 
                       value={formData.email} 
                       onChange={handleChange} 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-all duration-200" 
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ce7c8a] focus:border-transparent transition-all duration-200" 
                       placeholder="you@example.com" 
                     />
                     {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
@@ -252,7 +252,7 @@ export default function ContactPage() {
                       rows={5} 
                       value={formData.message} 
                       onChange={handleChange} 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-all duration-200" 
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ce7c8a] focus:border-transparent transition-all duration-200" 
                       placeholder="How can we help?" 
                     />
                     {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
@@ -260,7 +260,7 @@ export default function ContactPage() {
                   <button 
                     type="submit" 
                     disabled={submitting} 
-                    className="w-full bg-gradient-to-r from-pink-400 to-pink-500 text-white py-4 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full bg-gradient-to-r from-[#ce7c8a] to-[#b85c6d] text-white py-4 rounded-lg font-semibold hover:from-[#b85c6d] hover:to-[#a54c5d] transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {submitting ? (
                       <div className="flex items-center justify-center">
@@ -285,7 +285,7 @@ export default function ContactPage() {
       <section className="py-12 sm:py-16 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-sm font-medium mb-6 shadow-lg">
+            <div className="inline-flex items-center px-4 py-2 bg-[#ce7c8a] text-white rounded-full text-sm font-medium mb-6 shadow-lg">
               <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
               </svg>
@@ -300,7 +300,7 @@ export default function ContactPage() {
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
             <div className="h-96 w-full">
               <iframe
-                src="https://maps.google.com/maps?q=G-30,31,Ashoka+Centre,Near+bhapkar+petrol+pump,Pune+Satara+Road&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps?q=G-30,31+Ashoka+Centre,+Near+bhapkar+petrol+pump,+Pune+-+Satara+Road,+Pune,+Maharashtra,+India&output=embed&zoom=17"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -311,10 +311,10 @@ export default function ContactPage() {
                 className="w-full h-full"
               ></iframe>
             </div>
-            <div className="p-6 bg-gradient-to-r from-pink-50 to-pink-100 border-t border-pink-100">
+            <div className="p-6 bg-gradient-to-r from-[#f0d4d9] to-[#e8c4cb] border-t border-[#e8c4cb]">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-lg flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-[#ce7c8a] rounded-lg flex items-center justify-center mr-4">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -329,16 +329,16 @@ export default function ContactPage() {
                 </div>
                 <div className="flex gap-3 flex-wrap">
                   <a 
-                    href="https://maps.google.com/?q=G-30,31,Ashoka+Centre,Near+bhapkar+petrol+pump,Pune+Satara+Road"
+                    href="https://maps.google.com/?q=G-30,31+Ashoka+Centre,+Near+bhapkar+petrol+pump,+Pune+-+Satara+Road,+Pune,+Maharashtra,+India"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-4 py-2 rounded-lg font-medium hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-md hover:shadow-lg"
+                    className="bg-gradient-to-r from-[#ce7c8a] to-[#b85c6d] text-white px-4 py-2 rounded-lg font-medium hover:from-[#b85c6d] hover:to-[#a54c5d] transition-all duration-200 shadow-md hover:shadow-lg"
                   >
                     Get Directions
                   </a>
                   <a 
                     href="tel:+919822039087"
-                    className="border-2 border-pink-400 text-pink-600 px-4 py-2 rounded-lg font-medium hover:bg-pink-400 hover:text-white transition-all duration-200"
+                    className="border-2 border-[#ce7c8a] text-[#ce7c8a] px-4 py-2 rounded-lg font-medium hover:bg-[#ce7c8a] hover:text-white transition-all duration-200"
                   >
                     Call Now
                   </a>
@@ -350,10 +350,10 @@ export default function ContactPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-br from-pink-50 via-white to-pink-100 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-400/5 to-pink-500/5"></div>
+      <section className="py-20 bg-gradient-to-br from-[#f0d4d9] via-white to-[#e8c4cb] relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#ce7c8a]/5 to-[#ce7c8a]/5"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-sm font-medium mb-6 shadow-lg">
+            <div className="inline-flex items-center px-4 py-2 bg-[#ce7c8a] text-white rounded-full text-sm font-medium mb-6 shadow-lg">
             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
             </svg>
@@ -365,10 +365,10 @@ export default function ContactPage() {
             Contact us today for a consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+919822039087" className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl">
+            <a href="tel:+919822039087" className="bg-gradient-to-r from-[#ce7c8a] to-[#b85c6d] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-[#b85c6d] hover:to-[#a54c5d] transition-all duration-200 shadow-lg hover:shadow-xl">
               Call Us Now →
             </a>
-            <a href="mailto:archana@indiecaters.com" className="border-2 border-pink-400 text-pink-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-pink-400 hover:text-white transition-all duration-200">
+            <a href="mailto:archana@indiecaters.com" className="border-2 border-[#ce7c8a] text-[#ce7c8a] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#ce7c8a] hover:text-white transition-all duration-200">
               Send Email →
             </a>
           </div>

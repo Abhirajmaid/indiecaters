@@ -115,7 +115,7 @@ export default function IndustriesPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div className="text-center">
               <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">Industries We</span> <span className="text-white drop-shadow-lg">Serve</span>
+                <span className="bg-gradient-to-r from-[#ce7c8a] to-[#b85c6d] bg-clip-text text-transparent drop-shadow-lg">Industries We</span> <span className="text-white drop-shadow-lg">Serve</span>
               </h1>
               <p className="text-xl sm:text-2xl text-white max-w-4xl mx-auto leading-relaxed mb-8 drop-shadow-lg">
                 Professional industrial indicators for diverse industry applications. 
@@ -129,10 +129,10 @@ export default function IndustriesPage() {
 
       {/* Industries Grid */}
       <section className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-400/5 to-pink-500/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#ce7c8a]/5 to-[#ce7c8a]/5"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-sm font-medium mb-6 shadow-lg">
+            <div className="inline-flex items-center px-4 py-2 bg-[#ce7c8a] text-white rounded-full text-sm font-medium mb-6 shadow-lg">
               <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
               </svg>
@@ -196,7 +196,7 @@ export default function IndustriesPage() {
                         <ul className="space-y-3 text-gray-600">
                           {industry.applications.map((item, idx) => (
                             <li key={idx} className="flex items-start text-sm">
-                              <span className="mt-1 mr-3 w-1.5 h-1.5 bg-pink-500 rounded-full flex-shrink-0"></span>
+                              <span className="mt-1 mr-3 w-1.5 h-1.5 bg-[#ce7c8a] rounded-full flex-shrink-0"></span>
                               {item}
                             </li>
                           ))}
@@ -207,7 +207,7 @@ export default function IndustriesPage() {
                         <ul className="space-y-3 text-gray-600">
                           {industry.benefits.map((item, idx) => (
                             <li key={idx} className="flex items-start text-sm">
-                              <span className="mt-1 mr-3 w-1.5 h-1.5 bg-pink-500 rounded-full flex-shrink-0"></span>
+                              <span className="mt-1 mr-3 w-1.5 h-1.5 bg-[#ce7c8a] rounded-full flex-shrink-0"></span>
                               {item}
                             </li>
                           ))}
@@ -238,8 +238,8 @@ export default function IndustriesPage() {
       <section className="bg-gradient-to-r from-gray-50 to-blue-50 pt-8 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center bg-gradient-to-br from-[#f0d4d9] to-[#e8c4cb] p-6 rounded-xl border border-[#e8c4cb] hover:shadow-lg transition-all duration-200">
+              <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                 </svg>
@@ -247,8 +247,8 @@ export default function IndustriesPage() {
               <div className="text-4xl font-bold text-gray-800 mb-2">3+</div>
               <div className="text-gray-600">Major Industries Served</div>
             </div>
-            <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center bg-gradient-to-br from-[#f0d4d9] to-[#e8c4cb] p-6 rounded-xl border border-[#e8c4cb] hover:shadow-lg transition-all duration-200">
+              <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
                 </svg>
@@ -256,8 +256,8 @@ export default function IndustriesPage() {
               <div className="text-4xl font-bold text-gray-800 mb-2">500+</div>
               <div className="text-gray-600">Industry Clients Worldwide</div>
             </div>
-            <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center bg-gradient-to-br from-[#f0d4d9] to-[#e8c4cb] p-6 rounded-xl border border-[#e8c4cb] hover:shadow-lg transition-all duration-200">
+              <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
@@ -265,8 +265,8 @@ export default function IndustriesPage() {
               <div className="text-4xl font-bold text-gray-800 mb-2">15+</div>
               <div className="text-gray-600">Years Industry Experience</div>
             </div>
-            <div className="text-center bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center bg-gradient-to-br from-[#f0d4d9] to-[#e8c4cb] p-6 rounded-xl border border-[#e8c4cb] hover:shadow-lg transition-all duration-200">
+              <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                 </svg>
@@ -280,10 +280,10 @@ export default function IndustriesPage() {
 
       {/* Why Choose Us */}
       <section className="py-20 bg-gradient-to-br from-white to-blue-50 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-400/5 to-pink-500/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#ce7c8a]/5 to-[#ce7c8a]/5"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-sm font-medium mb-6 shadow-lg">
+            <div className="inline-flex items-center px-4 py-2 bg-[#ce7c8a] text-white rounded-full text-sm font-medium mb-6 shadow-lg">
               <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
               </svg>
@@ -296,8 +296,8 @@ export default function IndustriesPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-pink-100 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-[#f0d4d9] hover:shadow-lg transition-all duration-200">
+              <div className="w-12 h-12 bg-[#ce7c8a] rounded-lg flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -308,8 +308,8 @@ export default function IndustriesPage() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-pink-100 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-[#f0d4d9] hover:shadow-lg transition-all duration-200">
+              <div className="w-12 h-12 bg-[#ce7c8a] rounded-lg flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -320,8 +320,8 @@ export default function IndustriesPage() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-pink-100 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-[#f0d4d9] hover:shadow-lg transition-all duration-200">
+              <div className="w-12 h-12 bg-[#ce7c8a] rounded-lg flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -332,8 +332,8 @@ export default function IndustriesPage() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-pink-100 hover:shadow-lg transition-all duration-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-[#f0d4d9] hover:shadow-lg transition-all duration-200">
+              <div className="w-12 h-12 bg-[#ce7c8a] rounded-lg flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5z" />
                 </svg>
@@ -348,10 +348,10 @@ export default function IndustriesPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-br from-pink-50 via-white to-pink-100 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-400/5 to-pink-500/5"></div>
+      <section className="py-20 bg-gradient-to-br from-[#f0d4d9] via-white to-[#e8c4cb] relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#ce7c8a]/5 to-[#ce7c8a]/5"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full text-sm font-medium mb-6 shadow-lg">
+          <div className="inline-flex items-center px-4 py-2 bg-[#ce7c8a] text-white rounded-full text-sm font-medium mb-6 shadow-lg">
             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
             </svg>
@@ -363,10 +363,10 @@ export default function IndustriesPage() {
             Contact our experts today for a consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-pink-500 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl">
+            <a href="/contact" className="bg-gradient-to-r from-[#ce7c8a] to-[#b85c6d] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-[#b85c6d] hover:to-[#a54c5d] transition-all duration-200 shadow-lg hover:shadow-xl">
               Get Industry Consultation →
             </a>
-            <a href="/catalog" className="border-2 border-pink-400 text-pink-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-pink-400 hover:text-white transition-all duration-200">
+            <a href="/catalog" className="border-2 border-[#ce7c8a] text-[#ce7c8a] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#ce7c8a] hover:text-white transition-all duration-200">
               View Our Products →
             </a>
           </div>

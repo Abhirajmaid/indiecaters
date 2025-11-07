@@ -137,16 +137,16 @@ export default function MoisturePage() {
       );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-pink-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-[#f0d4d9]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-pink-50 via-pink-100 to-pink-50 py-20 border-b border-pink-100">
+      <section className="bg-gradient-to-r from-[#f0d4d9] via-[#e8c4cb] to-[#f0d4d9] py-20 border-b border-[#e8c4cb]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-100 to-pink-200 text-pink-800 rounded-full text-sm font-medium mb-6">
+            <span className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-[#f0d4d9] to-[#e8c4cb] text-[#b85c6d] rounded-full text-sm font-medium mb-6">
               💧 Moisture Solutions
             </span>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
-              <span className="bg-gradient-to-r from-pink-600 to-pink-700 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#b85c6d] to-[#a54c5d] bg-clip-text text-transparent">
                 Moisture
               </span>{" "}
               <span className="text-gray-800">Indicators</span>
@@ -157,19 +157,19 @@ export default function MoisturePage() {
             </p>
             <div className="flex justify-center space-x-8 text-sm text-gray-600">
               <div className="flex items-center">
-                <svg className="w-4 h-4 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-[#ce7c8a] mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                 </svg>
                 High Absorption Capacity
               </div>
               <div className="flex items-center">
-                <svg className="w-4 h-4 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-[#ce7c8a] mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                 </svg>
                 Reusable Options
               </div>
               <div className="flex items-center">
-                <svg className="w-4 h-4 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-[#ce7c8a] mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                 </svg>
                 Industrial Grade
@@ -196,7 +196,7 @@ export default function MoisturePage() {
                   onClick={() => setSelectedFilter(filter.id)}
                   className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
                     selectedFilter === filter.id
-                      ? 'bg-gradient-to-r from-pink-500 to-pink-600 text-white shadow-md'
+                      ? 'bg-gradient-to-r from-[#ce7c8a] to-[#b85c6d] text-white shadow-md'
                       : 'text-gray-600 hover:bg-gray-50'
                   }`}
                 >
@@ -222,7 +222,7 @@ export default function MoisturePage() {
                     className="max-h-full max-w-full object-contain rounded-lg"
                   />
                   {product.popular && (
-                    <div className="absolute top-4 right-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div className="absolute top-4 right-4 bg-gradient-to-r from-[#ce7c8a] to-[#b85c6d] text-white px-3 py-1 rounded-full text-xs font-bold">
                       ★ Popular
                     </div>
                   )}
@@ -233,7 +233,7 @@ export default function MoisturePage() {
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex-1">
-                      <h3 className="text-lg font-bold text-gray-800 mb-1 group-hover:text-pink-600 transition-colors">
+                      <h3 className="text-lg font-bold text-gray-800 mb-1 group-hover:text-[#ce7c8a] transition-colors">
                         {product.name}
                       </h3>
                       <p className="text-sm text-gray-500 font-medium">{product.type}</p>
@@ -248,7 +248,7 @@ export default function MoisturePage() {
                   <div className="space-y-2 mb-4">
                     {product.features.slice(0, 2).map((feature, index) => (
                       <div key={index} className="flex items-center text-xs text-gray-600">
-                        <svg className="w-3 h-3 text-pink-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-3 h-3 text-[#ce7c8a] mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                         </svg>
                         {feature}
@@ -270,7 +270,7 @@ export default function MoisturePage() {
                     <div className="flex items-center">
                       <span className="text-sm font-semibold text-gray-800">{product.price}</span>
                     </div>
-                    <button className="text-pink-600 hover:text-pink-700 text-sm font-medium flex items-center group">
+                    <button className="text-[#ce7c8a] hover:text-[#b85c6d] text-sm font-medium flex items-center group">
                       View Details
                       <svg className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -284,14 +284,14 @@ export default function MoisturePage() {
 
           {/* Call to Action */}
           <div className="text-center mt-16">
-            <div className="bg-gradient-to-r from-pink-100 to-pink-200 rounded-2xl p-8 border border-pink-200">
+            <div className="bg-gradient-to-r from-[#f0d4d9] to-[#e8c4cb] rounded-2xl p-8 border border-[#e8c4cb]">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Need Custom Moisture Control?</h3>
               <p className="text-gray-600 mb-6">
                 We provide specialized moisture control solutions tailored to your specific packaging and storage requirements.
               </p>
               <button 
                 onClick={() => window.location.href = '/contact'}
-                className="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-8 py-3 rounded-xl font-semibold hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-[#ce7c8a] to-[#b85c6d] text-white px-8 py-3 rounded-xl font-semibold hover:from-[#b85c6d] hover:to-[#a54c5d] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Contact Our Experts
               </button>

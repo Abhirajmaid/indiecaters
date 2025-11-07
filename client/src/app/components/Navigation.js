@@ -18,26 +18,26 @@ export default function Navigation() {
 
 					{/* Desktop Navigation */}
 					<nav className="hidden md:flex items-center space-x-8">
-						<Link href="/" className="text-gray-700 hover:text-pink-600 font-semibold text-lg lg:text-xl transition-colors duration-200">
+						<Link href="/" className="text-gray-700 hover:text-[#ce7c8a] font-semibold text-lg lg:text-xl transition-colors duration-200">
 							Home
 						</Link>
-						<Link href="/about" className="text-gray-700 hover:text-pink-600 font-semibold text-lg lg:text-xl transition-colors duration-200">
+						<Link href="/about" className="text-gray-700 hover:text-[#ce7c8a] font-semibold text-lg lg:text-xl transition-colors duration-200">
 							About
 						</Link>
-						<Link href="/products" className="text-gray-700 hover:text-pink-600 font-semibold text-lg lg:text-xl transition-colors duration-200">
+						<Link href="/products" className="text-gray-700 hover:text-[#ce7c8a] font-semibold text-lg lg:text-xl transition-colors duration-200">
 							Products
 						</Link>
-						<Link href="/industries" className="text-gray-700 hover:text-pink-600 font-semibold text-lg lg:text-xl transition-colors duration-200">
+						<Link href="/industries" className="text-gray-700 hover:text-[#ce7c8a] font-semibold text-lg lg:text-xl transition-colors duration-200">
 							Industries
 						</Link>
-						<Link href="/contact" className="text-gray-700 hover:text-pink-600 font-semibold text-lg lg:text-xl transition-colors duration-200">
+						<Link href="/contact" className="text-gray-700 hover:text-[#ce7c8a] font-semibold text-lg lg:text-xl transition-colors duration-200">
 							Contact
 						</Link>
 					</nav>
 
 					{/* CTA Button */}
 					<div className="hidden md:flex items-center space-x-4">
-						<Link href="/contact" className="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-6 py-2 rounded-lg font-semibold text-sm hover:from-pink-600 hover:to-pink-700 transition-all duration-200 shadow-md hover:shadow-lg">
+						<Link href="/contact" className="bg-[#ce7c8a] text-white px-6 py-2 rounded-lg font-semibold text-sm hover:bg-[#b85c6d] transition-all duration-200 shadow-md hover:shadow-lg">
 							Get Started
 						</Link>
 					</div>
@@ -45,7 +45,7 @@ export default function Navigation() {
 					{/* Mobile Menu Button */}
 					<button 
 						aria-label="Toggle menu" 
-						className="md:hidden p-2 text-gray-700 hover:text-pink-600 transition-colors duration-200" 
+						className="md:hidden p-2 text-gray-700 hover:text-[#ce7c8a] transition-colors duration-200" 
 						onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					>
 						<svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -58,23 +58,23 @@ export default function Navigation() {
 				{isMobileMenuOpen && (
 					<div className="md:hidden border-t border-gray-200 bg-white">
 						<nav className="flex flex-col py-4 space-y-2">
-							<Link href="/" className="text-gray-700 hover:text-pink-600 font-semibold text-lg px-4 py-2 transition-colors duration-200" onClick={() => setIsMobileMenuOpen(false)}>
+							<Link href="/" className="text-gray-700 hover:text-[#ce7c8a] font-semibold text-lg px-4 py-2 transition-colors duration-200" onClick={() => setIsMobileMenuOpen(false)}>
 								Home
 							</Link>
-							<Link href="/about" className="text-gray-700 hover:text-pink-600 font-semibold text-lg px-4 py-2 transition-colors duration-200" onClick={() => setIsMobileMenuOpen(false)}>
+							<Link href="/about" className="text-gray-700 hover:text-[#ce7c8a] font-semibold text-lg px-4 py-2 transition-colors duration-200" onClick={() => setIsMobileMenuOpen(false)}>
 								About
 							</Link>
-							<Link href="/products" className="text-gray-700 hover:text-pink-600 font-semibold text-lg px-4 py-2 transition-colors duration-200" onClick={() => setIsMobileMenuOpen(false)}>
+							<Link href="/products" className="text-gray-700 hover:text-[#ce7c8a] font-semibold text-lg px-4 py-2 transition-colors duration-200" onClick={() => setIsMobileMenuOpen(false)}>
 								Products
 							</Link>
-							<Link href="/industries" className="text-gray-700 hover:text-pink-600 font-semibold text-lg px-4 py-2 transition-colors duration-200" onClick={() => setIsMobileMenuOpen(false)}>
+							<Link href="/industries" className="text-gray-700 hover:text-[#ce7c8a] font-semibold text-lg px-4 py-2 transition-colors duration-200" onClick={() => setIsMobileMenuOpen(false)}>
 								Industries
 							</Link>
-							<Link href="/contact" className="text-gray-700 hover:text-pink-600 font-semibold text-lg px-4 py-2 transition-colors duration-200" onClick={() => setIsMobileMenuOpen(false)}>
+							<Link href="/contact" className="text-gray-700 hover:text-[#ce7c8a] font-semibold text-lg px-4 py-2 transition-colors duration-200" onClick={() => setIsMobileMenuOpen(false)}>
 								Contact
 							</Link>
 							<div className="px-4 pt-2">
-								<Link href="/contact" className="block bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-lg font-semibold text-center hover:from-pink-600 hover:to-pink-700 transition-all duration-200" onClick={() => setIsMobileMenuOpen(false)}>
+								<Link href="/contact" className="block bg-[#ce7c8a] text-white px-4 py-2 rounded-lg font-semibold text-center hover:bg-[#b85c6d] transition-all duration-200" onClick={() => setIsMobileMenuOpen(false)}>
 									Get Started
 								</Link>
 							</div>
