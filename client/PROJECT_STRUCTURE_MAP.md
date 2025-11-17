@@ -53,7 +53,7 @@ Navigation System
 ├── 📦 PRODUCTS (Dropdown)
 │   ├── → Products Overview
 │   ├── → Sterilisation Indicators  
-│   ├── → Moisture Indicators
+│   ├── → Moisture/ Humidity Indicators
 │   └── → Temperature Indicators
 ├── ℹ️ ABOUT (Dropdown)
 │   ├── → About Company
@@ -75,7 +75,7 @@ Home (#home)
 │   ├── Mission Statement
 │   └── CTA Buttons (Explore Products, Learn More)
 ├── 📊 Statistics Grid
-│   ├── 500+ Products Delivered
+│   ├── 50K+ Indicators Delivered
 │   ├── 50+ Happy Clients
 │   ├── 15+ Years Experience
 │   └── 24/7 Customer Support
@@ -113,7 +113,7 @@ Products (#products)
     │   ├── Helix PCD Test Stripes
     │   ├── BMS Helix Test Stripes
     │   └── Steam Indicator Labels
-    ├── 💧 Moisture Indicators
+    ├── 💧 Moisture/ Humidity Indicators
     │   ├── Pink Alert State (High Moisture)
     │   ├── Blue Safe State (Optimal)
     │   ├── Lavender Transition (Intermediate)

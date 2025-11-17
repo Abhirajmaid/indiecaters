@@ -32,7 +32,7 @@ export default function InvestorsPage() {
       value: "40%",
       period: "of Total Revenue",
       trend: "up",
-      description: "Strong international presence across 25+ countries"
+      description: "Strong presence across 15+ cities"
     }
   ];
 
@@ -275,7 +275,7 @@ export default function InvestorsPage() {
                       <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3 mt-2"></div>
                       <div>
                         <h4 className="font-semibold text-gray-800">Global Presence</h4>
-                        <p className="text-gray-600">Exporting to 25+ countries with local distribution partners</p>
+                        <p className="text-gray-600">Serving 15+ cities with local distribution partners</p>
                       </div>
                     </div>
                     <div className="flex items-start">

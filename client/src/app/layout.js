@@ -21,7 +21,7 @@ export const metadata = {
 	description:
 		"IndieCaters Pvt Ltd - India's premier manufacturer of professional industrial indicators. Specializing in sterilization, moisture, and temperature monitoring solutions with 15+ years of expertise. ISO certified quality, woman-led innovation.",
 	keywords:
-		"industrial indicators, sterilization indicators, moisture indicators, temperature indicators, steam indicators, ETO indicators, chemical indicators, India manufacturer, quality assurance, ISO certified",
+		"industrial indicators, sterilization indicators, moisture/ humidity indicators, temperature indicators, steam indicators, ETO indicators, chemical indicators, India manufacturer, quality assurance, ISO certified",
 	authors: [{ name: "IndieCaters Pvt Ltd" }],
 	creator: "IndieCaters Pvt Ltd",
 	publisher: "IndieCaters Pvt Ltd",

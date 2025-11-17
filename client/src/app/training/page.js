@@ -567,8 +567,8 @@ export default function TrainingPage() {
               <div className="text-gray-600">Satisfaction Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-gray-800 mb-2">25+</div>
-              <div className="text-gray-600">Countries Served</div>
+              <div className="text-4xl font-bold text-gray-800 mb-2">15+</div>
+              <div className="text-gray-600">Cities Served</div>
             </div>
           </div>
         </div>

@@ -448,8 +448,8 @@ export default function PartnersPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-gray-800 mb-2">25+</div>
-              <div className="text-gray-600">Countries Served</div>
+              <div className="text-4xl font-bold text-gray-800 mb-2">15+</div>
+              <div className="text-gray-600">Cities Served</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-gray-800 mb-2">50+</div>

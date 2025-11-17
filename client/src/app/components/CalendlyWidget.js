@@ -61,7 +61,7 @@ export default function CalendlyWidget() {
         </svg>
       </button>
       <div className="opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none bg-white text-[#ce7c8a] rounded-lg px-4 py-2 text-xs font-semibold mt-2 transition-opacity absolute bottom-16 right-0 z-20 shadow-lg select-none whitespace-nowrap">
-        Schedule time with me
+        Book your slot
       </div>
     </div>
   );

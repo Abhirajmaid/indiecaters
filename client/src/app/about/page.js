@@ -54,7 +54,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center bg-white/50 p-3 rounded-lg">
                   <div className="w-3 h-3 bg-[#ce7c8a] rounded-full mr-3"></div>
-                  <span className="text-gray-700 font-medium">Only woman manufacturer in India in this field</span>
+                  <span className="text-gray-700 font-medium">75+ products delivered across industries</span>
                 </div>
                 <div className="flex items-center bg-white/50 p-3 rounded-lg">
                   <div className="w-3 h-3 bg-[#ce7c8a] rounded-full mr-3"></div>
@@ -62,7 +62,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center bg-white/50 p-3 rounded-lg">
                   <div className="w-3 h-3 bg-[#ce7c8a] rounded-full mr-3"></div>
-                  <span className="text-gray-700 font-medium">1,000,000+ indicators delivered globally</span>
+                  <span className="text-gray-700 font-medium">50K+ indicators delivered globally</span>
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function AboutPage() {
                     </svg>
                   </div>
                   <div className="text-3xl font-bold text-gray-800 mb-2">15+</div>
-                  <div className="text-gray-600 text-sm">Years Experience</div>
+                  <div className="text-gray-600 text-sm">Years Domain Experience</div>
                 </div>
                 <div className="text-center bg-white p-4 md:p-6 rounded-lg shadow-sm border border-[#f0d4d9]">
                   <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -83,8 +83,8 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
                     </svg>
                   </div>
-                  <div className="text-3xl font-bold text-gray-800 mb-2">500+</div>
-                  <div className="text-gray-600 text-sm">Products Delivered</div>
+                  <div className="text-3xl font-bold text-gray-800 mb-2">50K+</div>
+                  <div className="text-gray-600 text-sm">Indicators Delivered</div>
                 </div>
                 <div className="text-center bg-white p-4 md:p-6 rounded-lg shadow-sm border border-[#f0d4d9]">
                   <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-3">
@@ -129,12 +129,11 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Origin and Launch</h3>
-              <p className="text-gray-700 leading-relaxed">
-              ●	Location: Pune, Maharashtra, India
-              ●	Founding Year: 2023
-              ●	Identity: Made-in-India startup
-
-              </p>
+              <div className="space-y-2 text-gray-700 text-base leading-relaxed">
+                <p>● Location: Pune, Maharashtra, India</p>
+                <p>● Founding Year: 2023</p>
+                <p>● Identity: Made-in-India startup</p>
+              </div>
             </div>
 
             {/* Vision */}
@@ -146,12 +145,11 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Core Offering & Purpose</h3>
-              <p className="text-gray-700 leading-relaxed">
-              ●	Product: Simple, printed, non-digital indicators
-              ●	Function: Monitor sterilization, temperature, and humidity
-              ●	Objective: Simplify quality assurance through cost-effective and reliable indicators.
-
-              </p>
+              <div className="space-y-2 text-gray-700 text-base leading-relaxed">
+                <p>● Product: Simple, printed, non-digital indicators</p>
+                <p>● Function: Monitor sterilization, temperature, and humidity</p>
+                <p>● Objective: Simplify quality assurance through cost-effective and reliable indicators</p>
+              </div>
             </div>
 
             {/* Values */}
@@ -162,12 +160,11 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Target Industries & Impact</h3>
-              <p className="text-gray-700 leading-relaxed">
-              ●	Key Sectors: Healthcare, Pharma, Food, and Agriculture
-              ●	Challenges Addressed: Improper sterilization, product spoilage, and moisture-related degradation.
-              ●	Business Edge: Asset-light, scalable model, zero major domestic competition, and strong potential for export.
-
-              </p>
+              <div className="space-y-2 text-gray-700 text-base leading-relaxed">
+                <p>● Key Sectors: Healthcare, Pharma, Food, and Agriculture</p>
+                <p>● Challenges: Improper sterilization, product spoilage, and moisture-related degradation</p>
+                <p>● Business Edge: Asset-light, scalable model with export-ready operations</p>
+              </div>
             </div>
           </div>
         </div>
@@ -198,10 +195,11 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="font-bold text-gray-800 mb-2">Innovation & Simplicity</h3>
-              <p className="text-sm text-gray-600">●	Focus: Solving complex problems (sterilization, spoilage) with simple, non-digital technology.
-●	Motto: Keep it simple, reliable, and effective.
-●	Value: Prioritizing practical, low-barrier innovation over expensive complexity.
-</p>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p>● Focus: Solve sterilization and spoilage problems with simple tech</p>
+                <p>● Motto: Keep solutions straightforward, reliable, effective</p>
+                <p>● Value: Prefer practical, low-barrier innovation over costly complexity</p>
+              </div>
             </div>
             <div className="bg-white p-5 md:p-6 rounded-xl text-center shadow-sm border border-[#f0d4d9] hover:shadow-lg transition-all duration-200">
               <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -210,10 +208,11 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="font-bold text-gray-800 mb-2">Quality & Reliability</h3>
-              <p className="text-sm text-gray-600">●	Standard: Commitment to providing trustworthy indicators crucial for sensitive sectors (Healthcare, Pharma, Food).
-●	Ethos: Zero tolerance for errors in monitoring, ensuring product safety.
-●	Result: Building solutions that instill confidence in end-users.
-</p>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p>● Standard: Trustworthy indicators for sensitive sectors</p>
+                <p>● Ethos: Zero tolerance for monitoring errors</p>
+                <p>● Result: Tools that instill confidence in every audit</p>
+              </div>
             </div>
             <div className="bg-white p-5 md:p-6 rounded-xl text-center shadow-sm border border-[#f0d4d9] hover:shadow-lg transition-all duration-200">
               <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -222,10 +221,11 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="font-bold text-gray-800 mb-2">Frugality & Scalability</h3>
-              <p className="text-sm text-gray-600">●	Approach: Utilizing an asset-light model to ensure cost-effectiveness and profitability.
-●	Goal: Designing for nationwide adoption and export through efficient resource use.
-●	Principle: Delivering high value while keeping costs low.
-</p>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p>● Approach: Asset-light operations for cost efficiency</p>
+                <p>● Goal: Scale nationwide and export-ready with minimal overhead</p>
+                <p>● Principle: Deliver maximum value at minimal cost</p>
+              </div>
             </div>
             <div className="bg-white p-5 md:p-6 rounded-xl text-center shadow-sm border border-[#f0d4d9] hover:shadow-lg transition-all duration-200">
               <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -234,10 +234,11 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="font-bold text-gray-800 mb-2">Impact & Reach</h3>
-              <p className="text-sm text-gray-600">●	Mission: Direct engagement with critical challenges in major industries.
-●	Scope: Thinking globally (export potential) while serving domestic needs (Made-in-India).
-●	Aspiration: Becoming a leading global name in simple quality monitoring.
-</p>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p>● Mission: Tackle critical industry challenges head-on</p>
+                <p>● Scope: Serve domestic demands while building export strength</p>
+                <p>● Aspiration: Become the global name for simple quality monitoring</p>
+              </div>
             </div>
           </div>
         </div>
@@ -259,7 +260,7 @@ export default function AboutPage() {
               </div>
               <h2 className="text-4xl font-bold text-gray-800 mb-6">About the Founder</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              The Founder of Prime Enterprises and IndieCaters Pvt Ltd holds a postgraduate degree in Physics. Before launching Prime Enterprises, she spent two years post-graduation teaching as a lecturer in an engineering college. She is recognized as the only woman manufacturer in India in this specific field.
+              The Founder of Prime Enterprises and IndieCaters Pvt Ltd holds a postgraduate degree in Physics. Before launching Prime Enterprises, she spent two years post-graduation teaching as a lecturer in an engineering college. She is recognized as one of India's foremost specialists in industrial indicators, respected for her deep domain expertise.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
               Beyond her academic and entrepreneurial pursuits, she is a dedicated sports enthusiast who has successfully completed the government skiing training programme. Her move into entrepreneurship was driven by identifying critical gaps in the ecosystem while working at an electronics product company, particularly in the pre-press printing process, which led to the founding of Prime Enterprises.
@@ -267,7 +268,7 @@ export default function AboutPage() {
               <div className="space-y-3">
                 <div className="flex items-center bg-white/50 p-3 rounded-lg">
                   <div className="w-3 h-3 bg-[#ce7c8a] rounded-full mr-3"></div>
-                  <span className="text-gray-700 font-medium">Founded Prime Enterprises as trading firm</span>
+                  <span className="text-gray-700 font-medium">Founded Prime Enterprises for specialty printed products</span>
                 </div>
                 <div className="flex items-center bg-white/50 p-3 rounded-lg">
                   <div className="w-3 h-3 bg-[#ce7c8a] rounded-full mr-3"></div>
@@ -294,7 +295,7 @@ export default function AboutPage() {
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-[#ce7c8a]">1st</div>
-                    <div className="text-xs text-gray-600">Woman Manufacturer</div>
+                    <div className="text-xs text-gray-600">Domain Specialist</div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-[#ce7c8a]">PG</div>

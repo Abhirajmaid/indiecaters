@@ -13,7 +13,7 @@ export default function Footer() {
 							<Image src="/indie.image.png" alt="IndieCaters Logo" width={48} height={48} className="w-10 h-10 object-contain mr-3" />
 							<div>
 								<span className="text-lg font-bold text-white">IndieCaters</span>
-								<p className="text-xs font-medium" style={{ color: '#ce7c8a' }}>Since 2008</p>
+								<p className="text-xs font-medium" style={{ color: '#ce7c8a' }}>Since 2023</p>
 							</div>
 						</div>
 						<p className="text-gray-300 text-sm leading-relaxed mb-4 max-w-md">
@@ -34,7 +34,7 @@ export default function Footer() {
 							<li><Link href="/products/sterilization" style={{ transition: 'color 0.2s' }} className="hover:!text-[#ce7c8a]">Sterilization Indicators</Link></li>
 							<li><Link href="/products/humidity" className="hover:text-[#ce7c8a] transition-colors">Humidity Indicators</Link></li>
 							<li><Link href="/products/temperature" className="hover:text-[#ce7c8a] transition-colors">Temperature Indicators</Link></li>
-							<li><Link href="/products/moisture" className="hover:text-[#ce7c8a] transition-colors">Moisture Indicators</Link></li>
+							<li><Link href="/products/moisture" className="hover:text-[#ce7c8a] transition-colors">Moisture/ Humidity Indicators</Link></li>
 						</ul>
 					</div>
 

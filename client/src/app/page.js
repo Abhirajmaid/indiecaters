@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
+import CalendlyWidget from "./components/CalendlyWidget";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -142,7 +143,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4">ISO Certified Quality</h3>
               <p className="text-sm md:text-base text-gray-600">
-              IndieCaters ensures reliability through *ISO-certified production standards*, guaranteeing precision and consistency in every indicator manufactured.
+              IndieCaters ensures reliability through ISO-certified production standards, guaranteeing precision and consistency in every indicator manufactured.
               </p>
             </div>
 
@@ -154,7 +155,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4">Made-in-India Innovation</h3>
               <p className="text-sm md:text-base text-gray-600">
-               All products are proudly *developed and produced in India*, supporting local manufacturing while meeting global quality benchmarks.
+               All products are proudly developed and produced in India, supporting local manufacturing while meeting global quality benchmarks.
               </p>
             </div>
 
@@ -166,7 +167,10 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4">Simple Yet Smart Solutions</h3>
               <p className="text-sm md:text-base text-gray-600">
-              Our *printed, non-digital indicators* offer easy-to-use, infrastructure-free monitoring—ideal for hospitals, pharma, and food industries.
+              Our printed, non-digital indicators offer easy-to-use, infrastructure-free monitoring—ideal for hospitals, pharma, and food industries.
+              </p>
+              <p className="text-sm md:text-base text-gray-600 mt-2">
+              They remain inexpensive and easy to access, ensuring even smaller facilities can adopt reliable monitoring without heavy investments.
               </p>
             </div>
 
@@ -178,7 +182,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4">Scalable & Sustainable</h3>
               <p className="text-sm md:text-base text-gray-600">
-              Designed for *seamless scalability*, our solutions can be easily adopted across industries while promoting sustainability and efficiency
+              Designed for seamless scalability, our solutions can be easily adopted across industries while promoting sustainability and efficiency
               </p>
             </div>
 
@@ -190,7 +194,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4">Diverse Applications</h3>
               <p className="text-sm md:text-base text-gray-600">
-              Serving *healthcare, pharmaceuticals, food, agriculture, and chemical sectors*, our indicators enhance safety, reduce wastage, and prevent losses.
+              Serving healthcare, pharmaceuticals, food, agriculture, and chemical sectors, our indicators enhance safety, reduce wastage, and prevent losses.
               </p>
             </div>
 
@@ -231,7 +235,7 @@ export default function Home() {
                 <div>
                   <h4 className="text-base md:text-lg font-semibold text-gray-800 mb-2">Professional steam sterilisation monitoring:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    Our sterilisation indicators are equipped with advanced chemical sensors to detect Steam Penetration, Temperature, 
+                    Our sterilisation indicators are equipped with advanced chemical technology to detect Steam Penetration, Temperature, 
                     Time Duration, and Pressure - ensuring complete sterilisation process validation.
                   </p>
                 </div>
@@ -247,7 +251,7 @@ export default function Home() {
                 <div>
                   <h4 className="text-base md:text-lg font-semibold text-gray-800 mb-2">A team of experts on your side:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    IndieCaters, established in 2008, is led by experienced sterilisation scientists and engineers with 
+                    IndieCaters, established in 2023, is led by experienced sterilisation scientists and engineers with 
                     over 15 years of expertise in industrial monitoring solutions.
                   </p>
                 </div>
@@ -279,10 +283,7 @@ export default function Home() {
                     />
                     <div className="text-sm font-semibold text-gray-800 mt-2">Sterilisation</div>
                     <div className="text-xs text-gray-600">Indicators</div>
-                </div>
-                  <div className="absolute bottom-2 right-2 text-xs text-gray-500 bg-white px-2 py-1 rounded">
-                    Class 5 & 6
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -290,7 +291,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Moisture Indicators Section - Photo Left */}
+      {/* Moisture/ Humidity Indicators Section - Photo Left */}
       <section id="moisture-indicators" className="bg-gradient-to-br from-white to-blue-50 py-12 md:py-20 relative">
         <div className="absolute inset-0 bg-gradient-to-r from-[#ce7c8a]/5 to-[#ce7c8a]/5"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -307,15 +308,12 @@ export default function Home() {
                   <div className="text-center">
                     <Image
                       src="/newimg/Humidity%20Indicators.jpg"
-                      alt="Moisture Indicators"
+                      alt="Moisture/ Humidity Indicators"
                       fill
                       className="object-cover rounded-lg mx-auto"
                     />
-                    <div className="text-sm font-semibold text-gray-800 mt-2">Moisture</div>
+                    <div className="text-sm font-semibold text-gray-800 mt-2">Moisture/ Humidity</div>
                     <div className="text-xs text-gray-600">Indicators</div>
-                  </div>
-                  <div className="absolute bottom-2 left-2 text-xs text-gray-500 bg-white px-2 py-1 rounded">
-                    Humidity
                   </div>
                 </div>
               </div>
@@ -327,17 +325,17 @@ export default function Home() {
                   <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
                   </svg>
-                  Moisture Solutions
+                  Moisture/ Humidity Solutions
                 </div>
-                <h2 className="text-4xl font-bold text-gray-800 mb-4">Moisture Indicators</h2>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-6">Our most reliable moisture detection solution</h3>
+                <h2 className="text-4xl font-bold text-gray-800 mb-4">Moisture/ Humidity Indicators</h2>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-6">Our most reliable moisture/ humidity detection solution</h3>
               </div>
               
               <div className="space-y-6">
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">Comprehensive moisture monitoring:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    Our moisture indicators detect Humidity Levels, Temperature Variations, Dew Point, and Relative Humidity - 
+                    Our moisture/ humidity indicators detect Humidity Levels, Temperature Variations, Dew Point, and Relative Humidity - 
                     ensuring optimal storage conditions for pharmaceutical, food, and packaging industries.
                   </p>
                 </div>
@@ -430,18 +428,15 @@ export default function Home() {
                 <div className="aspect-square bg-gradient-to-br from-red-50 to-[#f0d4d9] rounded-lg flex items-center justify-center mb-6 relative overflow-hidden">
                   <div className="absolute top-4 left-4 w-2 h-2 bg-red-400 rounded-full"></div>
                   <div className="absolute top-4 left-8 w-2 h-2 bg-red-400 rounded-full"></div>
-            <div className="text-center">
+                  <div className="text-center">
                     <Image
-                      src="/newimg/Autoclave_Machine.jpg"
+                      src="/newimgsofar/1.jpg"
                       alt="Temperature Indicators"
                       fill
                       className="object-cover rounded-lg mx-auto"
                     />
                     <div className="text-sm font-semibold text-gray-800 mt-2">Temperature</div>
                     <div className="text-xs text-gray-600">Indicators</div>
-                  </div>
-                  <div className="absolute bottom-2 right-2 text-xs text-gray-500 bg-white px-2 py-1 rounded">
-                    Thermal
                   </div>
                 </div>
               </div>
@@ -474,8 +469,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                 </svg>
               </div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">500+</div>
-              <div className="text-gray-600 text-xs md:text-sm">Enterprise Clients</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">50+</div>
+              <div className="text-gray-600 text-xs md:text-sm">Happy Clients</div>
             </div>
             <div className="text-center bg-white p-4 md:p-6 rounded-xl shadow-sm border border-[#f0d4d9] hover:shadow-lg transition-all duration-200">
               <div className="w-10 h-10 md:w-12 md:h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
@@ -483,8 +478,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">25+</div>
-              <div className="text-gray-600 text-xs md:text-sm">Countries Served</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">15+</div>
+              <div className="text-gray-600 text-xs md:text-sm">Cities Served</div>
             </div>
             <div className="text-center bg-white p-4 md:p-6 rounded-xl shadow-sm border border-[#f0d4d9] hover:shadow-lg transition-all duration-200">
               <div className="w-10 h-10 md:w-12 md:h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4">
@@ -492,7 +487,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
                 </svg>
               </div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">1M+</div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">50K+</div>
               <div className="text-gray-600 text-xs md:text-sm">Indicators Delivered</div>
             </div>
             <div className="text-center bg-white p-4 md:p-6 rounded-xl shadow-sm border border-[#f0d4d9] hover:shadow-lg transition-all duration-200">
@@ -559,7 +554,7 @@ export default function Home() {
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                     </svg>
                   </div>
-                  <span className="text-sm text-gray-700 font-medium">500+ Happy Clients</span>
+                  <span className="text-sm text-gray-700 font-medium">50+ Happy Clients</span>
                 </div>
                 <div className="flex items-center bg-white/50 p-3 rounded-lg">
                   <div className="w-8 h-8 bg-[#ce7c8a] rounded-full flex items-center justify-center mr-3">
@@ -588,11 +583,11 @@ export default function Home() {
                   <div className="bg-gray-50 p-4 md:p-6 lg:p-8 rounded-lg shadow-sm h-full flex flex-col">
                     <div className="flex items-center mb-6">
                       <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold text-lg">AS</span>
+                        <span className="text-white font-bold text-lg">DJ</span>
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Dr. Anjali Sharma</h4>
-                        <p className="text-sm md:text-base text-gray-600">Quality Control Manager, Apollo Hospitals</p>
+                        <h4 className="text-lg font-semibold text-gray-800">Divya Jyoti Charitable Trust</h4>
+                        <p className="text-sm md:text-base text-gray-600">Surat • Community Healthcare</p>
                       </div>
                     </div>
                     <div className="flex mb-4">
@@ -603,8 +598,7 @@ export default function Home() {
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "IndieCaters' sterilisation indicators have been instrumental in maintaining our hospital's quality standards. 
-                      The accuracy and reliability are exceptional, and their customer support is outstanding."
+                      "IndieCaters' sterilisation indicators give our surgical camps instant assurance. The visual change is easy for our volunteers to interpret, so every instrument tray meets safety protocols even in remote outreach clinics."
                     </blockquote>
                   </div>
                 </div>
@@ -613,11 +607,11 @@ export default function Home() {
                   <div className="bg-gray-50 p-4 md:p-6 lg:p-8 rounded-lg shadow-sm h-full flex flex-col">
                     <div className="flex items-center mb-6">
                       <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold text-lg">RK</span>
+                        <span className="text-white font-bold text-lg">ZE</span>
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Rajesh Kumar</h4>
-                        <p className="text-sm md:text-base text-gray-600">Production Manager, Cipla Pharmaceuticals</p>
+                        <h4 className="text-lg font-semibold text-gray-800">Zamindar Eye Hospital</h4>
+                        <p className="text-sm md:text-base text-gray-600">Bengaluru • Ophthalmic Care</p>
                       </div>
                     </div>
                     <div className="flex mb-4">
@@ -628,8 +622,7 @@ export default function Home() {
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "The moisture indicators from IndieCaters have revolutionized our quality control process. Their precision 
-                      and consistency help us maintain optimal storage conditions for our pharmaceutical products."
+                      "Switching to IndieCaters helped us document every sterilisation cycle for NABH compliance. Their indicators perform reliably even during hectic OT schedules, so our infection-control team can focus on patient care."
                     </blockquote>
                   </div>
                 </div>
@@ -638,11 +631,11 @@ export default function Home() {
                   <div className="bg-gray-50 p-4 md:p-6 lg:p-8 rounded-lg shadow-sm h-full flex flex-col">
                     <div className="flex items-center mb-6">
                       <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold text-lg">SP</span>
+                        <span className="text-white font-bold text-lg">SE</span>
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Sunita Patel</h4>
-                        <p className="text-sm md:text-base text-gray-600">Laboratory Director, Fortis Healthcare</p>
+                        <h4 className="text-lg font-semibold text-gray-800">Shriram Eye Hospital</h4>
+                        <p className="text-sm md:text-base text-gray-600">National Network • Ophthalmology</p>
                       </div>
                     </div>
                     <div className="flex mb-4">
@@ -653,8 +646,7 @@ export default function Home() {
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "IndieCaters' temperature indicators provide the accuracy and reliability we need for our critical processes. 
-                      Their products meet all international standards, and their customer service is prompt and professional."
+                      "We run multi-location eye camps, and IndieCaters' sterilisation indicators travel with every kit. The Class 5/6 performance keeps our surgeons confident that delicate ophthalmic tools are safe to use anywhere."
                     </blockquote>
                   </div>
                 </div>
@@ -663,11 +655,11 @@ export default function Home() {
                   <div className="bg-gray-50 p-4 md:p-6 lg:p-8 rounded-lg shadow-sm h-full flex flex-col">
                     <div className="flex items-center mb-6">
                       <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold text-lg">VM</span>
+                        <span className="text-white font-bold text-lg">ME</span>
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Vikram Mehta</h4>
-                        <p className="text-sm md:text-base text-gray-600">Operations Head, Sun Pharma</p>
+                        <h4 className="text-lg font-semibold text-gray-800">Magnewin Energy Pvt Ltd</h4>
+                        <p className="text-sm md:text-base text-gray-600">Sangli • Battery Manufacturing</p>
                       </div>
                     </div>
                     <div className="flex mb-4">
@@ -678,8 +670,7 @@ export default function Home() {
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "We've been partnering with IndieCaters for over 5 years, and they consistently deliver exceptional quality. 
-                      Their monitoring solutions help us maintain compliance with international pharmaceutical standards."
+                      "Temperature swings ruin entire battery batches. IndieCaters' temperature indicators log every heat exposure during curing and shipping, giving us traceability and saving hours of troubleshooting."
                     </blockquote>
                   </div>
                 </div>
@@ -689,11 +680,11 @@ export default function Home() {
                   <div className="bg-gray-50 p-4 md:p-6 lg:p-8 rounded-lg shadow-sm h-full flex flex-col">
                     <div className="flex items-center mb-6">
                       <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold text-lg">AS</span>
+                        <span className="text-white font-bold text-lg">DJ</span>
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Dr. Anjali Sharma</h4>
-                        <p className="text-sm md:text-base text-gray-600">Quality Control Manager, Apollo Hospitals</p>
+                        <h4 className="text-lg font-semibold text-gray-800">Divya Jyoti Charitable Trust</h4>
+                        <p className="text-sm md:text-base text-gray-600">Surat • Community Healthcare</p>
                       </div>
                     </div>
                     <div className="flex mb-4">
@@ -704,8 +695,7 @@ export default function Home() {
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "IndieCaters' sterilisation indicators have been instrumental in maintaining our hospital's quality standards. 
-                      The accuracy and reliability are exceptional, and their customer support is outstanding."
+                      "IndieCaters' sterilisation indicators give our surgical camps instant assurance. The visual change is easy for our volunteers to interpret, so every instrument tray meets safety protocols even in remote outreach clinics."
                     </blockquote>
                   </div>
                 </div>
@@ -714,11 +704,11 @@ export default function Home() {
                   <div className="bg-gray-50 p-4 md:p-6 lg:p-8 rounded-lg shadow-sm h-full flex flex-col">
                     <div className="flex items-center mb-6">
                       <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold text-lg">RK</span>
+                        <span className="text-white font-bold text-lg">ZE</span>
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Rajesh Kumar</h4>
-                        <p className="text-sm md:text-base text-gray-600">Production Manager, Cipla Pharmaceuticals</p>
+                        <h4 className="text-lg font-semibold text-gray-800">Zamindar Eye Hospital</h4>
+                        <p className="text-sm md:text-base text-gray-600">Bengaluru • Ophthalmic Care</p>
                       </div>
                     </div>
                     <div className="flex mb-4">
@@ -729,8 +719,7 @@ export default function Home() {
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "The moisture indicators from IndieCaters have revolutionized our quality control process. Their precision 
-                      and consistency help us maintain optimal storage conditions for our pharmaceutical products."
+                      "Switching to IndieCaters helped us document every sterilisation cycle for NABH compliance. Their indicators perform reliably even during hectic OT schedules, so our infection-control team can focus on patient care."
                     </blockquote>
                   </div>
                 </div>
@@ -739,11 +728,11 @@ export default function Home() {
                   <div className="bg-gray-50 p-4 md:p-6 lg:p-8 rounded-lg shadow-sm h-full flex flex-col">
                     <div className="flex items-center mb-6">
                       <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold text-lg">SP</span>
+                        <span className="text-white font-bold text-lg">SE</span>
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Sunita Patel</h4>
-                        <p className="text-sm md:text-base text-gray-600">Laboratory Director, Fortis Healthcare</p>
+                        <h4 className="text-lg font-semibold text-gray-800">Shriram Eye Hospital</h4>
+                        <p className="text-sm md:text-base text-gray-600">National Network • Ophthalmology</p>
                       </div>
                     </div>
                     <div className="flex mb-4">
@@ -754,8 +743,7 @@ export default function Home() {
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "IndieCaters' temperature indicators provide the accuracy and reliability we need for our critical processes. 
-                      Their products meet all international standards, and their customer service is prompt and professional."
+                      "We run multi-location eye camps, and IndieCaters' sterilisation indicators travel with every kit. The Class 5/6 performance keeps our surgeons confident that delicate ophthalmic tools are safe to use anywhere."
                     </blockquote>
                   </div>
                 </div>
@@ -764,11 +752,11 @@ export default function Home() {
                   <div className="bg-gray-50 p-4 md:p-6 lg:p-8 rounded-lg shadow-sm h-full flex flex-col">
                     <div className="flex items-center mb-6">
                       <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold text-lg">VM</span>
+                        <span className="text-white font-bold text-lg">ME</span>
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-gray-800">Vikram Mehta</h4>
-                        <p className="text-sm md:text-base text-gray-600">Operations Head, Sun Pharma</p>
+                        <h4 className="text-lg font-semibold text-gray-800">Magnewin Energy Pvt Ltd</h4>
+                        <p className="text-sm md:text-base text-gray-600">Sangli • Battery Manufacturing</p>
                       </div>
                     </div>
                     <div className="flex mb-4">
@@ -779,8 +767,7 @@ export default function Home() {
                       ))}
                     </div>
                     <blockquote className="text-gray-700 italic flex-1">
-                      "We've been partnering with IndieCaters for over 5 years, and they consistently deliver exceptional quality. 
-                      Their monitoring solutions help us maintain compliance with international pharmaceutical standards."
+                      "Temperature swings ruin entire battery batches. IndieCaters' temperature indicators log every heat exposure during curing and shipping, giving us traceability and saving hours of troubleshooting."
                     </blockquote>
                   </div>
                 </div>
@@ -867,6 +854,8 @@ export default function Home() {
           </div>
         </div>
       )}
+
+      <CalendlyWidget />
     </div>
   );
 }

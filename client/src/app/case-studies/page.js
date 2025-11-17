@@ -63,7 +63,7 @@ export default function CaseStudiesPage() {
         "Storage Facilities": "15+ locations"
       },
       testimonial: {
-        text: "The precision and reliability of IndieCaters' moisture indicators have been instrumental in maintaining our product quality standards and regulatory compliance.",
+        text: "The precision and reliability of IndieCaters' moisture/ humidity indicators have been instrumental in maintaining our product quality standards and regulatory compliance.",
         author: "Priya Sharma",
         position: "Quality Assurance Director, Sun Pharma",
         image: "👩‍🔬"
@@ -116,7 +116,7 @@ export default function CaseStudiesPage() {
         "ISO Compliance": "100%",
         "Contamination Incidents": "0",
         "Research Projects": "200+",
-        "Collaboration Partners": "25+ countries"
+        "Collaboration Partners": "15+ cities"
       },
       testimonial: {
         text: "The precision and reliability of IndieCaters' indicators have been crucial in maintaining our research standards and enabling international collaborations.",
@@ -144,7 +144,7 @@ export default function CaseStudiesPage() {
         "Sterility Assurance": "100%",
         "Sterility Failures": "0 in 3 years",
         "FDA Audit Score": "Excellent",
-        "Export Markets": "15+ countries"
+        "Export Markets": "15+ cities"
       },
       testimonial: {
         text: "IndieCaters' sterilization validation solutions have been instrumental in maintaining our global quality standards and regulatory compliance.",
@@ -374,7 +374,7 @@ export default function CaseStudiesPage() {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-gray-800 mb-2">50+</div>
-              <div className="text-gray-600">Enterprise Clients</div>
+              <div className="text-gray-600">Happy Clients</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-gray-800 mb-2">99.9%</div>

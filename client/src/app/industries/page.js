@@ -253,8 +253,8 @@ export default function IndustriesPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
                 </svg>
               </div>
-              <div className="text-4xl font-bold text-gray-800 mb-2">500+</div>
-              <div className="text-gray-600">Industry Clients Worldwide</div>
+              <div className="text-4xl font-bold text-gray-800 mb-2">50+</div>
+              <div className="text-gray-600">Happy Clients</div>
             </div>
             <div className="text-center bg-gradient-to-br from-[#f0d4d9] to-[#e8c4cb] p-6 rounded-xl border border-[#e8c4cb] hover:shadow-lg transition-all duration-200">
               <div className="w-12 h-12 bg-[#ce7c8a] rounded-full flex items-center justify-center mx-auto mb-4">

@@ -35,7 +35,7 @@ export default function CatalogPage() {
     },
     { 
       id: 'moisture', 
-      name: 'Moisture Indicators', 
+      name: 'Moisture/ Humidity Indicators', 
       icon: '💧',
       description: 'Advanced moisture monitoring for industrial applications',
       color: 'green'
