@@ -303,6 +303,35 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
+              
+              {/* Founder's Note */}
+              <div className="bg-white p-6 md:p-8 rounded-xl mt-6 shadow-lg border border-[#f0d4d9]">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-[#ce7c8a] rounded-lg flex items-center justify-center mr-3">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800">Founder's Note</h3>
+                </div>
+                <div className="text-gray-700 leading-relaxed space-y-4 text-sm md:text-base">
+                  <p>
+                    We are currently engaged in trading of speciality Printing raw material in Pune & have customer base across India under the name of "Prime Enterprises".
+                  </p>
+                  <p>
+                    The organization has expertise in speciality printing domain for last 15 years and has the ability to source broad range of speciality Printing raw material for markets across the globe.
+                  </p>
+                  <p>
+                    In this journey we noticed a void in availability of unique and new printing solutions for specific applications. This spurred me to commence a speciality printing Start Up which could address this gap. Thus "Indiecaters pvt ltd" was formed which is logical extension of my existing business.
+                  </p>
+                  <p>
+                    We have been mentored by IIM Bangalore for this startup. And have been a part of Maharashtra Government's initiative CORNELL MAHA60.
+                  </p>
+                  <p>
+                    I have been on various panels as judge in the startup ecosystem and a mentor on Maharashtra government's Start Up India scheme.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

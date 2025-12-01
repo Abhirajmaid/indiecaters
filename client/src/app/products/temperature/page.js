@@ -39,34 +39,44 @@ export default function TemperatureIndicatorsPage() {
       tags: ["strips", "heat", "process"]
     },
     {
-      id: 3,
-      name: "Thermal Exposure Dots",
+      id: 2,
+      slug: "temperature-indicating-labels-strips",
+      name: "Temperature Indicating Labels / Strips",
       category: "temperature",
-      type: "Thermal Indicator",
-      description: "Small-format thermal dots that permanently indicate exposure above a set temperature.",
+      type: "Temperature Monitor",
+      description: "The simplest way to check whether the temperature of any package exceeded permitted levels during transportation and storage. Available in reversible or irreversible types with temperature ranges from 20°C to 300°C.",
       features: [
-        "Single-use irreversible",
-        "Wide temp range",
-        "Easy to read",
-        "Cost-effective"
+        "Reversible and irreversible types",
+        "Temperature range: 20°C to 300°C",
+        "Compact size: 2 cm x 4 cm",
+        "Multiple indication points (3 to 50)",
+        "Self-adhesive design",
+        "Color change detection"
       ],
       specifications: {
-        "Temperature Points": "40–260°C",
-        "Accuracy": "±1°C typical",
-        "Form Factor": "8–12 mm dot",
-        "Standards": "RoHS compliant"
+        "Temperature Range": "20°C to 300°C",
+        "Size": "2 cm x 4 cm (typical)",
+        "Indications": "3 to 50 points",
+        "Types": "Reversible & Irreversible",
+        "Applications": "Storage, Transport, Industrial"
       },
       applications: [
-        "Electronics assembly",
-        "Sterilization accessory",
-        "Food processing",
-        "Industrial maintenance"
+        "Medicine Storage & Transport",
+        "Food Storage & Transportation",
+        "Chemical Storage",
+        "Research Sample Monitoring",
+        "Industrial Machinery Monitoring",
+        "Refrigerator & Freezer Monitoring",
+        "Server Rack Temperature Monitoring",
+        "Data Center Applications",
+        "Blood Bag Monitoring",
+        "Body Tissue Applications"
       ],
       price: "Contact for pricing",
-      image: "/next.svg",
+      image: "/newimgsofar/telatemp.jpg",
       inStock: true,
-      popular: false,
-      tags: ["thermal", "indicator", "dot"]
+      popular: true,
+      tags: ["strips", "labels", "transport", "storage", "industrial"]
     }
   ];
 
@@ -127,8 +137,8 @@ export default function TemperatureIndicatorsPage() {
               {[
                 { id: "all", label: "All Products", count: products.length },
                 { id: "heat", label: "Heat Process", count: products.filter(p => p.tags.includes("heat")).length },
-                { id: "cold chain", label: "Cold Chain", count: products.filter(p => p.tags.includes("cold chain")).length },
-                { id: "thermal", label: "Thermal Exposure", count: products.filter(p => p.tags.includes("thermal")).length }
+                { id: "transport", label: "Transport & Storage", count: products.filter(p => p.tags.includes("transport") || p.tags.includes("storage")).length },
+                { id: "industrial", label: "Industrial", count: products.filter(p => p.tags.includes("industrial")).length }
               ].map((filter) => (
                 <button
                   key={filter.id}

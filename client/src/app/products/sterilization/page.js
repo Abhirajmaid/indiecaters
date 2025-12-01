@@ -128,6 +128,177 @@ export default function SterilizationPage() {
       inStock: true,
       popular: false,
       tags: ["ETO", "tape", "self-adhesive"]
+    },
+    {
+      id: 5,
+      slug: "self-adhesive-autoclave-tape",
+      name: "Self Adhesive Autoclave Tape for Steam Sterilization",
+      category: "sterilization",
+      type: "Self-Adhesive Indicator",
+      description: "Self-adhesive autoclave tape for steam sterilization monitoring with clear color change indication from golden yellow to black.",
+      features: [
+        "Steam sterilization validation",
+        "Self-adhesive design",
+        "Clear color change indicator",
+        "Easy application and removal"
+      ],
+      specifications: {
+        "Cycle Time": "10-15 minutes",
+        "Temperature Range": "121-134°C",
+        "Color Change": "Golden Yellow to Black",
+        "Shelf Life": "3 years",
+        "Standards": "ISO 11140, AAMI ST79"
+      },
+      applications: [
+        "Steam Autoclaves",
+        "Hospital Sterilization",
+        "Dental Offices",
+        "Laboratory Equipment",
+        "Medical Device Processing"
+      ],
+      price: "Contact for pricing",
+      image: "/newimgsofar/Self-adhesive tape.jpg",
+      inStock: true,
+      popular: false,
+      tags: ["steam", "tape", "self-adhesive", "autoclave"]
+    },
+    {
+      id: 6,
+      slug: "helix-pcd-test-stripes",
+      name: "HELIX PCD TEST STRIPES (TYPE 2)",
+      category: "sterilization",
+      type: "Process Challenge Device",
+      description: "Type 2 chemical indicator test strips for steam sterilization validation. Professional test strips with 6 lines for comprehensive sterilization monitoring.",
+      features: [
+        "Steam sterilization validation",
+        "6 lines indicator design",
+        "Type 2 chemical indicator",
+        "Process challenge device"
+      ],
+      specifications: {
+        "Type": "TYPE 2",
+        "Indicator Lines": "6 Lines (Steam)",
+        "Pack Size": "1 Pack of 100 Stripes",
+        "Temperature Range": "121-134°C",
+        "Standards": "EN ISO 11140-1, ISO 11140"
+      },
+      applications: [
+        "Steam Autoclaves",
+        "Hospital Sterilization",
+        "Laboratory Equipment",
+        "Medical Device Processing",
+        "Dental Offices"
+      ],
+      price: "Contact for pricing",
+      image: "/newimgsofar/Helix pcd test stripes..png",
+      inStock: true,
+      popular: false,
+      tags: ["steam", "test strip", "PCD", "type 2"]
+    },
+    {
+      id: 7,
+      slug: "bms-helix-test-strips",
+      name: "BMS HELIX TEST STRIPS (TYPE 2)",
+      category: "sterilization",
+      type: "Process Challenge Device",
+      description: "Type 2 chemical indicator test strips for steam sterilization validation. Professional BMS test strips with 4 lines for comprehensive sterilization monitoring.",
+      features: [
+        "Steam sterilization validation",
+        "4 lines indicator design",
+        "Type 2 chemical indicator",
+        "Process challenge device"
+      ],
+      specifications: {
+        "Type": "TYPE 2",
+        "Indicator Lines": "4 Lines (Steam)",
+        "Pack Size": "1 Pack of 100 Stripes",
+        "Temperature Range": "121-134°C",
+        "Standards": "ISO 11140-1, ISO 11140"
+      },
+      applications: [
+        "Steam Autoclaves",
+        "Hospital Sterilization",
+        "Laboratory Equipment",
+        "Medical Device Processing",
+        "Dental Offices"
+      ],
+      price: "Contact for pricing",
+      image: "/newimgsofar/bms helix strips.jpg",
+      inStock: true,
+      popular: false,
+      tags: ["steam", "test strip", "BMS", "type 2"]
+    },
+    {
+      id: 8,
+      slug: "self-adhesive-steam-eto",
+      name: "Self Adhesive, for Steam & ETO Sterilization",
+      category: "sterilization",
+      type: "Self-Adhesive Indicator",
+      description: "Self-adhesive indicator labels designed as 3 line labels with lead for indicator ink. Suitable for both steam and ETO sterilization processes with clear color change indication.",
+      features: [
+        "Steam & ETO sterilization validation",
+        "3 line labels design",
+        "Self-adhesive application",
+        "Lead for indicator ink",
+        "Clear color change indicator"
+      ],
+      specifications: {
+        "Design": "3 Line Labels",
+        "Indicator Type": "Lead for Indicator Ink",
+        "Color Change": "Pink to Black",
+        "Sterilization Methods": "Steam & ETO",
+        "Temperature Range": "121-134°C (Steam), 20-60°C (ETO)",
+        "Standards": "ISO 11140"
+      },
+      applications: [
+        "Steam Autoclaves",
+        "ETO Sterilization",
+        "Hospital Sterilization",
+        "Medical Device Processing",
+        "Laboratory Equipment",
+        "Pharmaceutical"
+      ],
+      price: "Contact for pricing",
+      image: "/newimgsofar/self adhesiv efor steam.jpg",
+      inStock: true,
+      popular: false,
+      tags: ["steam", "ETO", "self-adhesive", "labels"]
+    },
+    {
+      id: 9,
+      slug: "self-adhesive-circular-eo-gamma",
+      name: "Self Adhesive Circular Chemical Process Indicator For EO/GAMMA (TYPE 1)",
+      category: "sterilization",
+      type: "Chemical Process Indicator",
+      description: "Self-adhesive circular chemical process indicator for ethylene oxide (EO) and gamma sterilization. Type 1 indicator with dual color change capabilities for comprehensive process validation.",
+      features: [
+        "EO & Gamma sterilization validation",
+        "Circular self-adhesive design",
+        "Type 1 chemical process indicator",
+        "Dual color change indicators",
+        "Easy application and monitoring"
+      ],
+      specifications: {
+        "Type": "TYPE 1",
+        "Design": "Circular Self-Adhesive",
+        "Color Change 1": "Blue to Brown",
+        "Color Change 2": "Yellow to Red",
+        "Sterilization Methods": "EO & Gamma",
+        "Standards": "ISO 11140-1"
+      },
+      applications: [
+        "ETO Sterilization",
+        "Gamma Sterilization",
+        "Medical Device Processing",
+        "Pharmaceutical",
+        "Laboratory Equipment",
+        "Hospital Sterilization"
+      ],
+      price: "Contact for pricing",
+      image: "/newimgsofar/Screenshot 2025-12-01 102724.png",
+      inStock: true,
+      popular: false,
+      tags: ["ETO", "gamma", "self-adhesive", "type 1", "circular"]
     }
   ];
 

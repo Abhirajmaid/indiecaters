@@ -333,26 +333,23 @@ export default function Home() {
               
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Comprehensive moisture monitoring:</h4>
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Inexpensive moisture detection solution:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    Our moisture/ humidity indicators detect Humidity Levels, Temperature Variations, Dew Point, and Relative Humidity - 
-                    ensuring optimal storage conditions for pharmaceutical, food, and packaging industries.
+                    Our moisture/ humidity indicators are an inexpensive device developed by IndieCaters Pvt.Ltd. for determining if dried food is dry enough to prevent mold growth during storage. Molds will not grow if the air around a product is lower than 65 percent relative humidity, ensuring safe storage conditions.
                   </p>
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Empowers you to protect your products:</h4>
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">How the Moisture Indicator works:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    Like having a quality control specialist for your storage environment - providing continuous monitoring 
-                    and early warning alerts for moisture-sensitive products.
+                    The Moisture Indicator incorporates a cobalt chloride humidity indicator strip that changes color with changing relative humidity. Place the indicator with your product in a sealed container - it displays an estimate in 30-60 minutes, with more accurate readings after 2 hours. Pink indicates the product is too wet for safe storage, while blue or grey means it's adequately dried.
             </p>
           </div>
 
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">A team of specialists on your side:</h4>
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Reusable and practical for food drying:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    IndieCaters' moisture monitoring experts bring decades of experience in environmental monitoring, 
-                    helping you maintain perfect storage conditions year-round.
+                    A Moisture Indicator can be reused many times when stored properly in a plastic bag to prevent accidental contact with water. For recently dried products, allow time for moisture equilibration (4 hours for rice, up to 24 hours for larger items) or break up the product sample for faster, more accurate readings.
                   </p>
                 </div>
               </div>
@@ -387,26 +384,23 @@ export default function Home() {
               
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Advanced temperature monitoring:</h4>
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Irreversible temperature indication:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    Our temperature indicators monitor Heat Process Validation, Cold Chain Integrity, Freeze/Thaw Detection, 
-                    and Thermal Exposure - ensuring critical process control and product safety.
+                    Each temperature indicator label contains many component parts working together to give an accurate color change when a specific temperature is reached. The color change process takes a maximum of about 4 seconds and is irreversible - once the change happens, it is permanent, making it ideal for monitoring products on a production line.
                   </p>
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Empowers you to maintain quality standards:</h4>
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Surface temperature monitoring:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    Like having a process engineer for your temperature-sensitive operations - providing real-time validation 
-                    and compliance monitoring for critical processes.
-                  </p>
-                </div>
-                
+                    The temperature indicating labels react according to the temperature of the surface to which they are applied - they react to what they are stuck to, rather than atmospheric or external conditions. All labels are backed with adhesive and require a good seal to the surface for optimal performance, making them oil, water, and steam resistant.
+            </p>
+          </div>
+
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">A team of process experts on your side:</h4>
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Proper application and storage:</h4>
                   <p className="text-sm md:text-base text-gray-600">
-                    IndieCaters' temperature monitoring specialists combine scientific expertise with practical industry knowledge, 
-                    ensuring your processes meet the highest quality standards.
+                    Ensure labels are placed on a clean, dry surface. For aggressive conditions, we recommend painting a layer of clear epoxy over the label. Storing the indicators in a refrigerator before use ensures good shelf life and maintains accuracy. The indicators typically have a one year shelf life, with a two year shelf life for some higher temperatures.
                   </p>
                 </div>
               </div>
@@ -430,7 +424,7 @@ export default function Home() {
                   <div className="absolute top-4 left-8 w-2 h-2 bg-red-400 rounded-full"></div>
                   <div className="text-center">
                     <Image
-                      src="/newimgsofar/1.jpg"
+                      src="/newimgsofar/Temperature Indicator hd.jpg"
                       alt="Temperature Indicators"
                       fill
                       className="object-cover rounded-lg mx-auto"

@@ -102,7 +102,7 @@ Products (#products)
 │   ├── Impact Indicators (8)
 │   ├── Tilt Indicators (6)
 │   ├── Vibration Indicators (5)
-│   ├── Humidity Indicators (12)
+│   ├── Humidity and Moisture Indicators (12)
 │   └── Liquid Detection (4)
 └── 📋 Product Catalog
     ├── 🧪 Sterilisation Indicators

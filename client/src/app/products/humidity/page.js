@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 
 export default function HumidityPage() {
   const [selectedFilter, setSelectedFilter] = useState("all");
@@ -57,7 +56,7 @@ export default function HumidityPage() {
             </span>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
               <span className="bg-gradient-to-r from-[#b85c6d] to-[#a54c5d] bg-clip-text text-transparent">
-                Humidity
+                Humidity and Moisture
               </span>{" "}
               <span className="text-gray-800">Indicators</span>
             </h1>
@@ -89,6 +88,29 @@ export default function HumidityPage() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-12 md:py-20 bg-gradient-to-br from-white to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Watch Our Product in Action</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              See how our humidity and moisture indicators work and their applications in real-world scenarios
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-[#f0d4d9]">
+              <iframe
+                src="https://www.youtube.com/embed/D4JuZR0LPEI"
+                title="IndieCaters Humidity and Moisture Indicators"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute top-0 left-0 w-full h-full"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Products Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,8 +118,7 @@ export default function HumidityPage() {
           <div className="flex justify-center mb-12">
             <div className="bg-white rounded-xl p-2 shadow-sm border border-gray-200">
               {[
-                { id: "all", label: "All Products", count: products.length },
-                { id: "RH cards", label: "RH Cards", count: products.filter(p => p.tags.includes("RH cards")).length }
+                { id: "all", label: "All Products", count: products.length }
               ].map((filter) => (
                 <button
                   key={filter.id}

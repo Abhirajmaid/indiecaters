@@ -32,7 +32,7 @@ export default function Footer() {
 						<h3 className="text-sm font-semibold mb-3" style={{ color: '#ce7c8a' }}>Products</h3>
 						<ul className="space-y-2 text-sm text-gray-300">
 							<li><Link href="/products/sterilization" style={{ transition: 'color 0.2s' }} className="hover:!text-[#ce7c8a]">Sterilization Indicators</Link></li>
-							<li><Link href="/products/humidity" className="hover:text-[#ce7c8a] transition-colors">Humidity Indicators</Link></li>
+							<li><Link href="/products/humidity" className="hover:text-[#ce7c8a] transition-colors">Humidity and Moisture Indicators</Link></li>
 							<li><Link href="/products/temperature" className="hover:text-[#ce7c8a] transition-colors">Temperature Indicators</Link></li>
 							<li><Link href="/products/moisture" className="hover:text-[#ce7c8a] transition-colors">Moisture/ Humidity Indicators</Link></li>
 						</ul>

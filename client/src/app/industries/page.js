@@ -7,7 +7,7 @@ export default function IndustriesPage() {
       name: 'Healthcare',
       description: 'Hospitals, Clinics, Laboratories',
       detailedDescription: 'Sterilization Monitoring for infection prevention and patient safety. Sterilization Process Indicators (Chemical Indicators) placed inside surgical packs and autoclaves to verify exposure to critical parameters (time, temperature, steam).',
-      image: 'https://picsum.photos/seed/healthcare/1600/900',
+      image: '/newimgsofar/healthcare.jpeg',
       applications: [
         'Surgical pack sterilization validation',
         'Autoclave process monitoring',
@@ -39,8 +39,8 @@ export default function IndustriesPage() {
       id: 'pharmaceutical',
       name: 'Pharmaceuticals',
       description: 'Manufacturing, R&D, Supply Chain',
-      detailedDescription: 'Product Integrity and Storage Compliance according to cGMP (current Good Manufacturing Practices). Temperature & Humidity Indicators attached to sensitive APIs (Active Pharmaceutical Ingredients) or final products during transport and storage, preventing degradation.',
-      image: 'https://picsum.photos/seed/pharmaceutical/1600/900',
+        detailedDescription: 'Product Integrity and Storage Compliance according to cGMP (current Good Manufacturing Practices). Temperature & Humidity and Moisture Indicators attached to sensitive APIs (Active Pharmaceutical Ingredients) or final products during transport and storage, preventing degradation.',
+      image: '/newimgsofar/pharmaceuticals_img.jpeg',
       applications: [
         'API storage monitoring',
         'Final product transport validation',
@@ -51,7 +51,7 @@ export default function IndustriesPage() {
       ],
       products: [
         'Temperature Indicators',
-        'Humidity Indicators',
+        'Humidity and Moisture Indicators',
         'Cold Chain Monitoring',
         'Storage Compliance Indicators',
         'Transport Validation Strips'
@@ -73,7 +73,7 @@ export default function IndustriesPage() {
       name: 'Agriculture',
       description: 'Seed Storage, Post-Harvest, Chemicals',
       detailedDescription: 'Moisture and Environment Control for viability and quality preservation of seeds and chemicals. Humidity Indicator Cards placed inside packaging for high-value seeds, fertilizers, or post-harvest storage containers to confirm safe moisture levels are maintained.',
-      image: 'https://picsum.photos/seed/agriculture/1600/900',
+      image: '/newimgsofar/agriculture.jpeg',
       applications: [
         'High-value seed packaging',
         'Fertilizer storage monitoring',
@@ -148,11 +148,11 @@ export default function IndustriesPage() {
             {industries.map((industry) => (
               <div key={industry.id} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-all duration-200 flex flex-col">
                 {/* Header Section */}
-                <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
+                <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
                   <img 
                     src={industry.image} 
                     alt={industry.name} 
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/20 to-black/30"></div>
                   <div className="absolute top-4 left-4">

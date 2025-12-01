@@ -21,7 +21,7 @@ export default function CatalogPage() {
     },
     { 
       id: 'humidity', 
-      name: 'Humidity Indicators', 
+      name: 'Humidity and Moisture Indicators', 
       icon: '💧',
       description: 'Reliable moisture detection for pharmaceutical, food, and packaging industries',
       color: 'cyan'

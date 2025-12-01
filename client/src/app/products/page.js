@@ -103,7 +103,7 @@ export default function ProductsPage() {
     },
     {
       id: "humidity",
-      name: "Humidity Indicators",
+      name: "Humidity and Moisture Indicators",
       image: "/newimg/Humidity%20Indicators.jpg",
       description: "Reliable moisture detection for pharmaceutical, food, and packaging industries",
       color: "from-[#ce7c8a] to-[#b85c6d]",
@@ -111,8 +111,8 @@ export default function ProductsPage() {
       borderColor: "border-[#e8c4cb]",
       textColor: "text-[#b85c6d]",
       hoverColor: "hover:from-[#f0d4d9] hover:to-[#e8c4cb]",
-      featuresDescription: "Our humidity indicators provide precise relative humidity measurement with long-term stability and pharmaceutical-grade accuracy. They feature visual color-changing technology, multiple humidity level detection, and easy interpretation. These indicators offer cost-effective moisture monitoring with reliable performance.",
-      applicationsDescription: "Perfect for pharmaceutical storage environments, food packaging quality control, electronics protection during shipping, and document preservation. Our humidity indicators are essential for cleanroom monitoring, warehouse humidity control, museum artifact protection, and HVAC system validation.",
+      featuresDescription: "Our humidity and moisture indicators provide precise relative humidity measurement with long-term stability and pharmaceutical-grade accuracy. They feature visual color-changing technology, multiple humidity level detection, and easy interpretation. These indicators offer cost-effective moisture monitoring with reliable performance.",
+      applicationsDescription: "Perfect for pharmaceutical storage environments, food packaging quality control, electronics protection during shipping, and document preservation. Our humidity and moisture indicators are essential for cleanroom monitoring, warehouse humidity control, museum artifact protection, and HVAC system validation.",
       products: [
         {
           id: 4,
@@ -183,28 +183,6 @@ export default function ProductsPage() {
             "Autoclave Sterilization",
             "Heat Treatment",
             "Manufacturing Processes"
-          ]
-        },
-        {
-          id: 9,
-          slug: "thermal-exposure-dots",
-          name: "Thermal Exposure Dots",
-          type: "Thermal Indicator",
-          description: "Small-format thermal dots that permanently indicate exposure above a set temperature. Ideal for compact applications where space is limited but temperature monitoring is critical for product safety and quality assurance.",
-          image: "/next.svg",
-          popular: false,
-          inStock: true,
-          price: "Contact for pricing",
-          features: [
-            "Compact design",
-            "Permanent indication",
-            "Set temperature monitoring",
-            "Space-efficient"
-          ],
-          applications: [
-            "Small Package Monitoring",
-            "Electronics Protection",
-            "Precision Instruments"
           ]
         }
       ],
